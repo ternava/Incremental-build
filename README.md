@@ -1,7 +1,6 @@
 
 # Running Dockerfile
 
--------------
 (comment: the docker image needs to be in the Docker Hub)
 
 - Build an image: `sudo docker build -t="xheva/imagex264" .`
