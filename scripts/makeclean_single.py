@@ -7,7 +7,8 @@ from time import time as timestamp
 from binarysize import calculate_binary_size
 
 # You need to provide the path to the repo of your project
-repo = git.Repo('/home/xternava/Documents/GitHub/x264-ib/')
+# repo = git.Repo('/home/xternava/Documents/GitHub/x264-ib/')
+repo = git.Repo('/github/x264/')
 
 # List all branches
 """ for branch in repo.branches:
@@ -37,7 +38,8 @@ def compilex264(compile_time_opt):
     return bt_real, bt_user, bt_sys
 
 # You need to provide the path to the repo where you want to save the results
-f = open('/home/xternava/Documents/GitHub/Incremental-build/data/buildtime_s1.csv', 'w')
+#f = open('/home/xternava/Documents/GitHub/Incremental-build/data/buildtime_s1.csv', 'w')
+f = open('/src/data/buildtime_dc1.csv', 'w')
 header = ['Branch', 'Option', 'bt_real', 'bt_user', 'bt_sys', 'BinarySize']
 writer = csv.writer(f)
 writer.writerow(header)
@@ -51,7 +53,7 @@ repo.git.checkout('x264-minimal')
 
 # The project in the minimal branch is compiled and commited
 build_time_1 = compilex264(min_ct_options)
-bsm = calculate_binary_size("./x264")
+bsm = calculate_binary_size("/github/x264/x264")
 
 bt = [str(repo.active_branch.name), str(min_ct_options), build_time_1[0], build_time_1[1], build_time_1[2], bsm]
 writer.writerow(bt)
@@ -81,7 +83,7 @@ for opt in lst_options:
     lst.remove(opt) 
 
     build_time_2  = compilex264(lst)
-    bs = calculate_binary_size("./x264")
+    bs = calculate_binary_size("/github/x264/x264")
 
     bt = [str(repo.active_branch.name), str(opt), build_time_2[0], build_time_2[1], build_time_2[2], bs]
     writer.writerow(bt)

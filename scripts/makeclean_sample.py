@@ -7,7 +7,8 @@ from time import time as timestamp
 from options import all_options, specialized_files
 from binarysize import calculate_binary_size
 
-repo = git.Repo('/home/xternava/Documents/GitHub/x264-ib/')
+#repo = git.Repo('/home/xternava/Documents/GitHub/x264-ib/')
+repo = git.Repo('/github/x264/')
 
 # Delete all existing branches: git branch | grep -v "master" | xargs git branch -D
 
@@ -28,7 +29,8 @@ def compilex264(compile_time_opt):
     return bt_real, bt_user, bt_sys
 
 header = ['Branch', 'Option', 'bt_real', 'bt_user', 'bt_sys', 'BinarySize']
-f = open('/home/xternava/Documents/GitHub/Incremental-build/data/buildtime_s2.csv', 'w')
+#f = open('/home/xternava/Documents/GitHub/Incremental-build/data/buildtime_s2.csv', 'w')
+f = open('/src/data/buildtime_dc2.csv', 'w')
 writer = csv.writer(f)
 writer.writerow(header)
 
@@ -52,7 +54,7 @@ for idx, spec in enumerate(all_options):
             repo.git.checkout('x264-'+ str(spec_file))
 
             build_time  = compilex264(spec)
-            bs = calculate_binary_size("./x264")
+            bs = calculate_binary_size("/github/x264/x264")
             bt = [str(repo.active_branch), str(spec), build_time[0], build_time[1], build_time[2], bs]
             writer.writerow(bt)
 
