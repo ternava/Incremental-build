@@ -4,30 +4,18 @@ FROM fedora:33
 ######################### START: Set up environment for sqlite ######################
 RUN sudo dnf update -y
 RUN sudo dnf groupinstall -y "Development Tools" "Development Libraries"
-RUN sudo dnf install -y nasm \
-                        libtool \
+RUN sudo dnf install -y libtool \
                         autoconf \
                         automake \
                         cmake \
                         git-core \
-                        libass-devel \
-                        libva-devel \
-                        libvdpau-devel \
-                        libvorbis-devel \
-                        meson \
-                        ninja-build \
-                        pkg-config \
-                        texinfo \
-                        wget \
-                        yasm
+                        pkg-config 
 
 ######################### END: Set up environment for sqlite ######################
 
-# Install dependencies for python, pandas, and jupyter
+# Install python, pandas, and jupyter
 RUN dnf install -y python3.6 python3-pip python3-devel python3-pandas
 RUN python3 -m pip install gitpython
-# RUN pip3 -q install pip --upgrade
-# RUN python3 -m pip install --user
 
 RUN sudo dnf install numpy python3-matplotlib
 RUN pip3 install jupyterlab
@@ -41,7 +29,7 @@ RUN mkdir github
 WORKDIR /github/
 RUN git clone https://github.com/sqlite/sqlite.git
 WORKDIR /github/sqlite/
-#RUN git reset --hard version-3.35.4
+RUN git reset --hard version-3.35.4
 #RUN git checkout version-3.35.4
 
 # Make clean build of sqlite
