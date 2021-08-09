@@ -10,16 +10,7 @@ RUN sudo dnf install -y nasm \
                         automake \
                         cmake \
                         git-core \
-                        libass-devel \
-                        libva-devel \
-                        libvdpau-devel \
-                        libvorbis-devel \
-                        meson \
-                        ninja-build \
-                        pkg-config \
-                        texinfo \
-                        wget \
-                        yasm
+                        pkg-config 
 
 ######################### END: Set up environment for xz ######################
 
@@ -41,7 +32,7 @@ RUN mkdir github
 WORKDIR /github/
 RUN git clone https://github.com/xz-mirror/xz.git
 WORKDIR /github/xz/
-#RUN git reset --hard e7da44d
+RUN git reset --hard e7da44d
 #RUN git checkout e7da44d
 
 # Make clean build of xz
