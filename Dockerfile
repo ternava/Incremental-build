@@ -63,10 +63,10 @@ RUN git commit -m "Initial project version"
 RUN python3 /src/scripts/is_gitignore.py
 
 # Make clean build of curl
-#RUN python3 /src/scripts/makeclean_single.py
+RUN python3 /src/scripts/makeclean_single.py
 RUN python3 /src/scripts/makeclean_sample.py
 # Incremental build of curl
-#RUN python3 /src/scripts/incremental_sample.py
+RUN python3 /src/scripts/incremental_sample.py
 
 # Show the obtained results from the make clean and incremental build of curl
 WORKDIR /src/notebooks
