@@ -1,7 +1,7 @@
 
 # Running Dockerfile
 
-(comment: the docker image needs to be in the Docker Hub)
+(comment: the docker image will be added also in the Docker Hub)
 
 - Build an image: `sudo docker build -t="xheva/imagex264" .`
 - Run a container from it: `docker run --name containerx264 -p 8888:8888 -it xheva/imagex264`
