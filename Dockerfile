@@ -61,10 +61,23 @@ COPY . .
 RUN cd ..
 RUN mkdir github
 WORKDIR /github/
-RUN git clone https://github.com/mirror/x264.git
-WORKDIR /github/x264/
+#RUN git clone https://github.com/mirror/x264.git
+#WORKDIR /github/x264/
 #RUN git reset --hard ae03d92
 #RUN git checkout ae03d92
+
+RUN wget https://github.com/mirror/x264/archive/ae03d92.zip -O /tmp/x264.zip
+RUN unzip /tmp/x264.zip -d /tmp/
+RUN mv /tmp/x264-ae03d92b52bb7581df2e75d571989cb1ecd19cbd/ /github/x264/
+WORKDIR /github/x264/
+RUN git init 
+RUN git config --global user.email "icse22@gmail.com" 
+RUN git config --global user.name "icse22" 
+RUN git add -f * 
+RUN git commit -m "Initial project version"
+
+# The ignored files, if exists, are enabled to be commited
+RUN python3 /src/scripts/is_gitignore.py
 
 # Make clean build of x264
 RUN python3 /src/scripts/makeclean_single.py
@@ -74,11 +87,4 @@ RUN python3 /src/scripts/incremental_sample.py
 
 # Show the obtained results from the make clean and incremental build of x264
 WORKDIR /src/notebooks
-
-# Add Tini. Tini operates as a process subreaper for jupyter. This prevents kernel crashes.
-#ENV TINI_VERSION v0.6.0
-#ADD https://github.com/krallin/tini/releases/download/${TINI_VERSION}/tini /usr/bin/tini
-#RUN chmod +x /usr/bin/tini
-#ENTRYPOINT ["/usr/bin/tini", "--"]
-
 CMD ["jupyter", "notebook", "--port=8888", "--no-browser", "--ip=0.0.0.0", "--allow-root"]
