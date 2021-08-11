@@ -5,7 +5,7 @@ from system_build import system_build_time
 from options import all_options, specialized_files
 from binarysize import calculate_binary_size
 
-#repo = git.Repo('/home/xternava/Documents/GitHub/x264-ib/')
+#repo = git.Repo('/home/xternava/Documents/GitHub/x264-ib2/')
 repo = git.Repo('/github/x264/')
 
 header = ['Branch', 'Option', 'bt_real', 'bt_user', 'bt_sys', 'BinarySize']

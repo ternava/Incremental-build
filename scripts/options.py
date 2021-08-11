@@ -10,7 +10,7 @@ def path_leaf(path):
     return tail or ntpath.basename(head)
 
 def spec_to_array():
-    #for variant in glob.glob("/home/xternava/Documents/GitHub/Incremental-build/x264-sample-configurations/sample-01/*.config"):
+    #for variant in glob.glob("/home/xternava/Documents/GitHub/Incremental-build/x264-sample-configurations/sample-02/*.config"):
     for variant in glob.glob("/src/x264-sample-configurations/sample-01/*.config"):
         specialized_files.append(path_leaf(variant[:-7]))
         lineList = list()

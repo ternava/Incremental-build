@@ -71,8 +71,8 @@ RUN unzip /tmp/x264.zip -d /tmp/
 RUN mv /tmp/x264-ae03d92b52bb7581df2e75d571989cb1ecd19cbd/ /github/x264/
 WORKDIR /github/x264/
 RUN git init 
-RUN git config --global user.email "icse22@gmail.com" 
-RUN git config --global user.name "icse22" 
+RUN git config --global user.email "anonymous22@gmail.com" 
+RUN git config --global user.name "anonymous22" 
 RUN git add -f * 
 RUN git commit -m "Initial project version"
 

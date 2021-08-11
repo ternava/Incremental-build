@@ -5,7 +5,7 @@ from system_build import system_build_time
 from options import all_options, specialized_files
 from binarysize import calculate_binary_size
 
-#repo = git.Repo('/home/xternava/Documents/GitHub/x264-ib/')
+#repo = git.Repo('/home/xternava/Documents/GitHub/x264-ib2/')
 repo = git.Repo('/github/x264/')
 
 
@@ -33,7 +33,7 @@ def incremental_build():
                 print(br[5:])
                 for idx, spec in enumerate(all_options):
                     if(idx == finx):
-                        # To checkout the main branch
+                        # To checkout the main starting branch
                         repo.git.checkout(br)
 
                         # Create a new branch

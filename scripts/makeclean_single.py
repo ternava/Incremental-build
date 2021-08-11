@@ -5,14 +5,8 @@ from system_build import system_build_time
 from binarysize import calculate_binary_size
 
 # You need to provide the path to the repo of your project
-# repo = git.Repo('/home/xternava/Documents/GitHub/x264-ib/')
+#repo = git.Repo('/home/xternava/Documents/GitHub/x264-ib2/')
 repo = git.Repo('/github/x264/')
-
-# List all branches
-""" for branch in repo.branches:
-    print(branch)
- """
-# Delete all existing branches: git branch | grep -v "master" | xargs git branch -D
 
 # Used options for a minimal configuration in x264
 min_ct_options = ["--disable-asm", "--disable-bashcompletion"]
@@ -38,7 +32,7 @@ def clean_build_minimal():
 
     # The project in the minimal branch is compiled and commited
     build_time_1 = system_build_time(min_ct_options)
-    #bsm = calculate_binary_size("./curl")
+    #bsm = calculate_binary_size("./x264")
     bsm = calculate_binary_size("/github/x264/x264")
 
     bt = [str(repo.active_branch.name), str(min_ct_options), build_time_1[0], build_time_1[1], build_time_1[2], bsm]
