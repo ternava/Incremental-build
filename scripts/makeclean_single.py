@@ -9,9 +9,9 @@ from binarysize import calculate_binary_size
 repo = git.Repo('/github/x264/')
 
 # Used options for a minimal configuration in x264
-min_ct_options = ["--disable-asm", "--disable-bashcompletion"]
-#, "--disable-opencl", "--disable-gpl", "--disable-thread", 
-#    "--disable-win32thread", "--disable-interlaced", "--bit-depth=8", "--chroma-format=400"]
+min_ct_options = ["--disable-asm", "--disable-bashcompletion", #"--disable-opencl", 
+                "--disable-gpl", "--disable-thread", "--disable-win32thread", 
+                "--disable-interlaced", "--bit-depth=8", "--chroma-format=400"]
     
 lst_options = min_ct_options[:]
 
