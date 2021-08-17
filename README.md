@@ -1,5 +1,5 @@
 
-# Running Dockerfile
+# Running the experiments from the Dockerfile
 
 (comment: the docker image will be added also in the Docker Hub)
  
