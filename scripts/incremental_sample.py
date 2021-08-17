@@ -5,13 +5,13 @@ from system_build import system_build_time
 from options import all_options, specialized_files
 from binarysize import calculate_binary_size
 
-repo = git.Repo('/home/xternava/Documents/GitHub/x264-ib2/')
-#repo = git.Repo('/github/x264/')
+#repo = git.Repo('/home/xternava/Documents/GitHub/x264-ib2/')
+repo = git.Repo('/github/x264/')
 
 
 header = ['Branch', 'Option', 'bt_real', 'bt_user', 'bt_sys', 'BinarySize']
-f = open('/home/xternava/Documents/GitHub/Incremental-build/data/buildtime_i2.csv', 'w')
-#f = open('/src/data/buildtime_di1.csv', 'w')
+#f = open('/home/xternava/Documents/GitHub/Incremental-build/data/buildtime_i2.csv', 'w')
+f = open('/src/data/buildtime_di1.csv', 'w')
 writer = csv.writer(f)
 writer.writerow(header)
 
@@ -45,8 +45,8 @@ def incremental_build():
 
                         print(repo.active_branch)
                         build_time = system_build_time(spec)
-                        bs = calculate_binary_size("./x264")
-                        #bs = calculate_binary_size("/github/x264/x264")
+                        #bs = calculate_binary_size("./x264")
+                        bs = calculate_binary_size("/github/x264/x264")
                         bt = [str(repo.active_branch), str(spec), build_time[0], build_time[1], build_time[2], bs]
                         writer.writerow(bt)
 
