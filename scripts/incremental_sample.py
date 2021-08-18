@@ -1,7 +1,7 @@
 import git 
 import csv
 
-from system_build import system_build_time
+from system_build import i_system_build_time
 from options import all_options, specialized_files
 from binarysize import calculate_binary_size
 
@@ -41,7 +41,7 @@ def incremental_build():
                         repo.git.checkout('i'+ str(br) + '-' + str(spec_file))
 
                         print(repo.active_branch)
-                        build_time = system_build_time(spec)
+                        build_time = i_system_build_time(spec)
                         #bs = calculate_binary_size("./src/xz/xz")
                         bs = calculate_binary_size("/github/xz/src/xz/xz")
                         bt = [str(repo.active_branch), str(spec), build_time[0], build_time[1], build_time[2], bs]

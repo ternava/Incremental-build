@@ -14,10 +14,15 @@ RUN sudo dnf install -y nasm \
                         libva-devel \
                         libvdpau-devel \
                         libvorbis-devel \
+                        meson \
+                        ninja-build \
                         pkg-config \
                         texinfo \
                         wget \
+                        yasm \
                         gettext-devel
+
+#RUN npm install capsicum@0.0.0
 
 ######################### END: Set up environment for xz ######################
 
