@@ -5,12 +5,12 @@ from system_build import system_build_time
 from options import all_options, specialized_files
 from binarysize import calculate_binary_size
 
-#repo = git.Repo('/home/xternava/Documents/GitHub/sqlite-ib/')
-repo = git.Repo('/github/sqlite/')
+#repo = git.Repo('/home/xternava/Documents/GitHub/xz-ib/')
+repo = git.Repo('/github/xz/')
 
 header = ['Branch', 'Option', 'bt_real', 'bt_user', 'bt_sys', 'BinarySize']
 #f = open('/home/xternava/Documents/GitHub/Incremental-build/data/buildtime_i2.csv', 'w')
-f = open('/src/data/buildtime_di1.csv', 'w')
+f = open('/src2/data/buildtime_di1.csv', 'w')
 writer = csv.writer(f)
 writer.writerow(header)
 
@@ -42,13 +42,17 @@ def incremental_build():
 
                         print(repo.active_branch)
                         build_time = system_build_time(spec)
-                        #bs = calculate_binary_size("./sqlite3")
-                        bs = calculate_binary_size("/github/sqlite/sqlite3")
+                        #bs = calculate_binary_size("./src/xz/xz")
+                        bs = calculate_binary_size("/github/xz/src/xz/xz")
                         bt = [str(repo.active_branch), str(spec), build_time[0], build_time[1], build_time[2], bs]
                         writer.writerow(bt)
 
                         # stage all changes (i.e., object files) and commit
-                        repo.git.add(all=True)
-                        repo.index.commit('incremental build of isqlite branch with ' + str(spec_file))
+                        repo.git.add(all=True, force=True)
+                        repo.index.commit('incremental build of ixz branch with ' + str(spec_file))
 
-incremental_build()
+def main(): 
+    incremental_build()
+
+if __name__== "__main__":
+   main()

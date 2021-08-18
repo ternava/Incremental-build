@@ -10,7 +10,14 @@ RUN sudo dnf install -y nasm \
                         automake \
                         cmake \
                         git-core \
-                        pkg-config 
+                        libass-devel \
+                        libva-devel \
+                        libvdpau-devel \
+                        libvorbis-devel \
+                        pkg-config \
+                        texinfo \
+                        wget \
+                        gettext-devel
 
 ######################### END: Set up environment for xz ######################
 
@@ -30,24 +37,30 @@ COPY . .
 RUN cd ..
 RUN mkdir github
 WORKDIR /github/
-RUN git clone https://github.com/xz-mirror/xz.git
-WORKDIR /github/xz/
-RUN git reset --hard e7da44d
+#RUN git clone https://github.com/xz-mirror/xz.git
+#WORKDIR /github/xz/
+#RUN git reset --hard e7da44d
 #RUN git checkout e7da44d
+
+RUN wget https://github.com/xz-mirror/xz/archive/e7da44d.zip -O /tmp/xz.zip
+RUN unzip /tmp/xz.zip -d /tmp/
+RUN mv /tmp/xz-e7da44d5151e21f153925781ad29334ae0786101/ /github/xz/
+WORKDIR /github/xz/
+RUN git init 
+RUN git config --global user.email "anonymous22@gmail.com" 
+RUN git config --global user.name "anonymous22" 
+RUN git add -f * 
+RUN git commit -m "Initial project version"
+
+# The ignored files, if exists, are enabled to be commited
+RUN python3 /src/scripts/is_gitignore.py
 
 # Make clean build of xz
 RUN python3 /src/scripts/makeclean_single.py
-RUN python3 /src/scripts/makeclean_sample.py
+RUN python3 /src2/scripts/makeclean_sample.py
 # Incremental build of xz
-RUN python3 /src/scripts/incremental_sample.py
+RUN python3 /src2/scripts/incremental_sample.py
 
 # Show the obtained results from the make clean and incremental build of xz
 WORKDIR /src/notebooks
-
-# Add Tini. Tini operates as a process subreaper for jupyter. This prevents kernel crashes.
-#ENV TINI_VERSION v0.6.0
-#ADD https://github.com/krallin/tini/releases/download/${TINI_VERSION}/tini /usr/bin/tini
-#RUN chmod +x /usr/bin/tini
-#ENTRYPOINT ["/usr/bin/tini", "--"]
-
 CMD ["jupyter", "notebook", "--port=8888", "--no-browser", "--ip=0.0.0.0", "--allow-root"]
