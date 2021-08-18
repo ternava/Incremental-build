@@ -57,9 +57,9 @@ RUN python3 /src/scripts/is_gitignore.py
 
 # Make clean build of xz
 RUN python3 /src/scripts/makeclean_single.py
-RUN python3 /src2/scripts/makeclean_sample.py
+RUN python3 /src/scripts/makeclean_sample.py
 # Incremental build of xz
-RUN python3 /src2/scripts/incremental_sample.py
+RUN python3 /src/scripts/incremental_sample.py
 
 # Show the obtained results from the make clean and incremental build of xz
 WORKDIR /src/notebooks
