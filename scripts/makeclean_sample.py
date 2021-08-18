@@ -12,7 +12,7 @@ print(all_options)
 
 header = ['Branch', 'Option', 'bt_real', 'bt_user', 'bt_sys', 'BinarySize']
 #f = open('/home/xternava/Documents/GitHub/Incremental-build/data/buildtime_s2.csv', 'w')
-f = open('/src2/data/buildtime_dc2.csv', 'w')
+f = open('/src/data/buildtime_dc2.csv', 'w')
 writer = csv.writer(f)
 writer.writerow(header)
 

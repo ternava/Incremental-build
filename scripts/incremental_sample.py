@@ -10,7 +10,7 @@ repo = git.Repo('/github/xz/')
 
 header = ['Branch', 'Option', 'bt_real', 'bt_user', 'bt_sys', 'BinarySize']
 #f = open('/home/xternava/Documents/GitHub/Incremental-build/data/buildtime_i2.csv', 'w')
-f = open('/src2/data/buildtime_di1.csv', 'w')
+f = open('/src/data/buildtime_di1.csv', 'w')
 writer = csv.writer(f)
 writer.writerow(header)
 
