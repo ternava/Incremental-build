@@ -20,7 +20,8 @@ RUN sudo dnf install -y brotli \
                         libssh2 \
                         nghttp2 \
                         fish \
-                        gzip
+                        gzip \
+                        lcov
 
 # few more libraries are not installed because they are platform dependent. 
 # They are: aix-soname, winssl, schannel, darwinssl, secure-transport, amissl, 

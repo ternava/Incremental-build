@@ -8,12 +8,6 @@ from binarysize import calculate_binary_size
 #repo = git.Repo('/home/xternava/Documents/GitHub/curl-ib/')
 repo = git.Repo('/github/curl/')
 
-# List all branches
-""" for branch in repo.branches:
-    print(branch)
- """
-# Delete all existing branches: git branch | grep -v "master" | xargs git branch -D
-
 # Used options for a minimal configuration in curl
 min_ct_options = ["--disable-ares","--disable-cookies","--disable-ipv6","--disable-manual"]
     
