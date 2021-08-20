@@ -42,8 +42,11 @@ def incremental_build():
 
                         print(repo.active_branch)
                         build_time = system_build_time(spec)
-                        #bs = calculate_binary_size("./src/xz/xz")
-                        bs = calculate_binary_size("/github/xz/src/xz/xz")
+                        try:
+                            #bs = calculate_binary_size("./src/xz/xz")
+                            bs = calculate_binary_size("/github/xz/src/xz/xz")
+                        except FileNotFoundError as e:
+                            bs = str("ERROR")
                         bt = [str(repo.active_branch), str(spec), build_time[0], build_time[1], build_time[2], bs]
                         writer.writerow(bt)
 
