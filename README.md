@@ -1,6 +1,6 @@
 The overleaf link to the paper: https://www.overleaf.com/9116776285kfqzmbbrnqzx
 
-Each project is analysed into a new branch, in this repository.
+Each project is added into a new branch, in this repository.
 
 ### Used projects:
  - x264: https://github.com/ternava/x264 ; Commit ID: [ae03d92](https://github.com/mirror/x264/tree/ae03d92b52bb7581df2e75d571989cb1ecd19cbd); Date: 13 June 2021
