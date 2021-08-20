@@ -8,8 +8,6 @@ from binarysize import calculate_binary_size
 #repo = git.Repo('/home/xternava/Documents/GitHub/sqlite-ib/')
 repo = git.Repo('/github/sqlite/')
 
-print(all_options)
-
 header = ['Branch', 'Option', 'bt_real', 'bt_user', 'bt_sys', 'BinarySize']
 #f = open('/home/xternava/Documents/GitHub/Incremental-build/data/buildtime_s2.csv', 'w')
 f = open('/src/data/buildtime_dc2.csv', 'w')
@@ -21,7 +19,6 @@ repo.git.checkout('master')
 
 # Create the minimal new branch, just copy the master one
 repo.git.branch('sqlite-mcopy')
-
 
 def clean_build():
     for idx, spec in enumerate(all_options):
@@ -42,7 +39,10 @@ def clean_build():
                 writer.writerow(bt)
 
                 # stage all changes (i.e., object files) and commit
-                repo.git.add(all=True)
+                repo.git.add(all=True, force=True)
                 repo.index.commit('clean build sqlite master copy with ' + str(spec_file))
+def main():
+    clean_build()
 
-clean_build()
+if __name__== "__main__":
+   main()

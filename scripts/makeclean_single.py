@@ -8,12 +8,6 @@ from binarysize import calculate_binary_size
 #repo = git.Repo('/home/xternava/Documents/GitHub/sqlite-ib/')
 repo = git.Repo('/github/sqlite/')
 
-# List all branches
-""" for branch in repo.branches:
-    print(branch)
- """
-# Delete all existing branches: git branch | grep -v "master" | xargs git branch -D
-
 # Used options for a minimal configuration in sqlite
 min_ct_options = ["--disable-option-checking", "--disable-libtool-lock", "--disable-largefile",
     "--disable-threadsafe", "--disable-tcl", "--disable-readline", "--disable-amalgamation",
@@ -76,8 +70,12 @@ def clean_build():
         bt = [str(repo.active_branch.name), str(opt), build_time_2[0], build_time_2[1], build_time_2[2], bs]
         writer.writerow(bt)
 
-        repo.git.add(all=True)
+        repo.git.add(all=True, force=True)
         repo.index.commit('clean build sqlite minimal without ' + opt[1:])
 
-clean_build_minimal()
-clean_build()
+def main():
+    clean_build_minimal()
+    clean_build()
+
+if __name__== "__main__":
+   main()
