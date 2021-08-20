@@ -1,7 +1,7 @@
 # Base image as Fedora
 FROM fedora:33
 
-######################### START: Set up environment for sqlite ######################
+######################### START: Set up environment for xterm ######################
 RUN sudo dnf update -y
 RUN sudo dnf groupinstall -y "Development Tools" "Development Libraries"
 RUN sudo dnf install -y libtool \
@@ -16,7 +16,10 @@ RUN sudo dnf install -y libtool \
                         libvorbis-devel \
                         wget
 
-######################### END: Set up environment for sqlite ######################
+# The needed libraries to build xterm: 
+RUN sudo dnf install -y libXaw-devel
+
+######################### END: Set up environment for xterm ######################
 
 # Install python, pandas, and jupyter
 RUN dnf install -y python3.6 python3-pip python3-devel python3-pandas
@@ -32,15 +35,15 @@ COPY . .
 RUN cd ..
 RUN mkdir github
 WORKDIR /github/
-#RUN git clone https://github.com/sqlite/sqlite.git
-#WORKDIR /github/sqlite/
-#RUN git reset --hard version-3.35.4
-#RUN git checkout version-3.35.4
+#RUN git clone https://github.com/ThomasDickey/xterm-snapshots.git
+#WORKDIR /github/xterm/
+#RUN git reset --hard xterm-368
+#RUN git checkout xterm-368
 
-RUN wget https://github.com/sqlite/sqlite/archive/version-3.35.4.zip -O /tmp/sqlite.zip
-RUN unzip /tmp/sqlite.zip -d /tmp/
-RUN mv /tmp/sqlite-version-3.35.4/ /github/sqlite/
-WORKDIR /github/sqlite/
+RUN wget https://github.com/ThomasDickey/xterm-snapshots/archive/xterm-368.zip -O /tmp/xterm.zip
+RUN unzip /tmp/xterm.zip -d /tmp/
+RUN mv /tmp/xterm-snapshots-xterm-368/ /github/xterm/
+WORKDIR /github/xterm/
 RUN git init 
 RUN git config --global user.email "anonymous22@gmail.com" 
 RUN git config --global user.name "anonymous22" 
@@ -50,12 +53,12 @@ RUN git commit -m "Initial project version"
 # The ignored files, if exists, are enabled to be commited
 RUN python3 /src/scripts/is_gitignore.py
 
-# Make clean build of sqlite
-RUN python3 /src/scripts/makeclean_single.py
+# Make clean build of xterm
+#RUN python3 /src/scripts/makeclean_single.py
 RUN python3 /src/scripts/makeclean_sample.py
-# Incremental build of sqlite
+# Incremental build of xterm
 RUN python3 /src/scripts/incremental_sample.py
 
-# Show the obtained results from the make clean and incremental build of sqlite
+# Show the obtained results from the make clean and incremental build of xterm
 WORKDIR /src/notebooks
 CMD ["jupyter", "notebook", "--port=8888", "--no-browser", "--ip=0.0.0.0", "--allow-root"]
