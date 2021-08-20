@@ -30,7 +30,7 @@ def clean_build_minimal():
 
     # The project in the minimal branch is compiled and commited
     build_time_1 = system_build_time(min_ct_options)
-    #bsm = calculate_binary_size("./curl")
+    #bsm = calculate_binary_size("./src/curl")
     bsm = calculate_binary_size("/github/curl/src/curl")
 
     bt = [str(repo.active_branch.name), str(min_ct_options), build_time_1[0], build_time_1[1], build_time_1[2], bsm]
@@ -62,7 +62,7 @@ def clean_build():
         lst.remove(opt) 
 
         build_time_2  = system_build_time(lst)
-        #bs = calculate_binary_size("./curl")
+        #bs = calculate_binary_size("./src/curl")
         bs = calculate_binary_size("/github/curl/src/curl")
 
         bt = [str(repo.active_branch.name), str(opt), build_time_2[0], build_time_2[1], build_time_2[2], bs]

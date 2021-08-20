@@ -8,8 +8,6 @@ from binarysize import calculate_binary_size
 #repo = git.Repo('/home/xternava/Documents/GitHub/curl-ib/')
 repo = git.Repo('/github/curl/')
 
-print(all_options)
-
 header = ['Branch', 'Option', 'bt_real', 'bt_user', 'bt_sys', 'BinarySize']
 #f = open('/home/xternava/Documents/GitHub/Incremental-build/data/buildtime_s2.csv', 'w')
 f = open('/src/data/buildtime_dc2.csv', 'w')
@@ -21,7 +19,6 @@ repo.git.checkout('master')
 
 # Create the minimal new branch, just copy the master one
 repo.git.branch('curl-mcopy')
-
 
 def clean_build():
     for idx, spec in enumerate(all_options):
@@ -36,13 +33,13 @@ def clean_build():
                 repo.git.checkout('curl-'+ str(spec_file))
 
                 build_time  = system_build_time(spec)
-                #bs = calculate_binary_size("./objs/curl")
+                #bs = calculate_binary_size("./src/curl")
                 bs = calculate_binary_size("/github/curl/src/curl")
                 bt = [str(repo.active_branch), str(spec), build_time[0], build_time[1], build_time[2], bs]
                 writer.writerow(bt)
 
                 # stage all changes (i.e., object files) and commit
-                repo.git.add(all=True)
+                repo.git.add(all=True, force=True)
                 repo.index.commit('clean build curl master copy with ' + str(spec_file))
 def main():
     clean_build()

@@ -3,6 +3,7 @@ from os import path
 
 def main():
 
+    #path = '/home/xternava/Documents/GitHub/curl-ib/'
     path = '/github/curl/'
     if os.path.exists(str(path) + ".gitignore"):
         f_ignore = open(os.path.join(path, ".gitignore"), 'w')
