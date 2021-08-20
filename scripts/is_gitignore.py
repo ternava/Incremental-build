@@ -3,7 +3,7 @@ from os import path
 
 def main():
 
-    path = '/github/sqlite/'
+    path = '/github/xterm/'
     if os.path.exists(str(path) + ".gitignore"):
         f_ignore = open(os.path.join(path, ".gitignore"), 'w')
         f_ignore.truncate()

@@ -1,0 +1,11 @@
+Branch,Option,bt_real,bt_user,bt_sys,BinarySize
+sqlite-minimal,"['--disable-option-checking', '--disable-libtool-lock', '--disable-largefile', '--disable-threadsafe', '--disable-tcl', '--disable-readline', '--disable-amalgamation', '--disable-load-extension', '--disable-math']",36.4902,0.0006,0.0001,8526552
+sqlite-disable-option-checking,--disable-option-checking,36.2104,0.0006,0.0002,8526552
+sqlite-disable-libtool-lock,--disable-libtool-lock,36.7235,0.0006,0.0001,8526552
+sqlite-disable-largefile,--disable-largefile,36.3021,0.0007,0.0000,8526552
+sqlite-disable-threadsafe,--disable-threadsafe,36.4632,0.0000,0.0010,8604832
+sqlite-disable-tcl,--disable-tcl,36.0401,0.0006,0.0001,8526552
+sqlite-disable-readline,--disable-readline,37.9252,0.0006,0.0002,8529168
+sqlite-disable-amalgamation,--disable-amalgamation,35.1142,0.0000,0.0008,8526552
+sqlite-disable-load-extension,--disable-load-extension,35.5774,0.0006,0.0001,8557792
+sqlite-disable-math,--disable-math,37.7847,0.0000,0.0010,8559232
