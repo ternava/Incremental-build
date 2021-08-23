@@ -19,8 +19,16 @@ RUN sudo dnf install -y libtool \
 # The needed libraries to build xterm: 
 RUN sudo dnf install -y libXaw-devel
 
+RUN wget https://download.savannah.gnu.org/releases/freetype/freetype-2.10.1.tar.gz
+RUN tar xvfz freetype-2.10.1.tar.gz
+WORKDIR /freetype-2.10.1/
+RUN ./configure --prefix=/usr/local/freetype/2_10_1 --enable-freetype-config
+RUN make
+RUN make install
+
 ######################### END: Set up environment for xterm ######################
 
+WORKDIR /
 # Install python, pandas, and jupyter
 RUN dnf install -y python3.6 python3-pip python3-devel python3-pandas
 RUN python3 -m pip install gitpython
