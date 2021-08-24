@@ -1,0 +1,10 @@
+Branch,Option,bt_real,bt_user,bt_sys,BinarySize
+x264-minimal,"['--disable-asm', '--disable-bashcompletion', '--disable-gpl', '--disable-thread', '--disable-win32thread', '--disable-interlaced', '--bit-depth=8', '--chroma-format=400']",18.1792,0.0000,0.0010,1529552
+x264-disable-asm,--disable-asm,36.7862,0.0007,0.0002,1879304
+x264-disable-bashcompletion,--disable-bashcompletion,18.1722,0.0009,0.0000,1529552
+x264-disable-gpl,--disable-gpl,18.1135,0.0000,0.0009,1529552
+x264-disable-thread,--disable-thread,18.5722,0.0011,0.0000,1539400
+x264-disable-win32thread,--disable-win32thread,18.1750,0.0000,0.0009,1529552
+x264-disable-interlaced,--disable-interlaced,18.6362,0.0000,0.0010,1550024
+x264-bit-depth=8,--bit-depth=8,31.6273,0.0009,0.0000,2167792
+x264-chroma-format=400,--chroma-format=400,20.6666,0.0006,0.0002,1657760
