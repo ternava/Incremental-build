@@ -28,8 +28,8 @@ def incremental_build():
     for br in clean_build_branches:
         print(br)
         for finx, spec_file in enumerate(specialized_files):
-            if(spec_file != br[5:]):
-                print(br[5:])
+            if(spec_file != br[3:]):
+                print(br[3:])
                 for idx, spec in enumerate(all_options):
                     if(idx == finx):
                         # To checkout the main branch
@@ -46,7 +46,7 @@ def incremental_build():
                             #bs = calculate_binary_size("./src/xz/xz")
                             bs = calculate_binary_size("/github/xz/src/xz/xz")
                         except FileNotFoundError as e:
-                            bs = str("ERROR")
+                            bs = -1
                         bt = [str(repo.active_branch), str(spec), build_time[0], build_time[1], build_time[2], bs]
                         writer.writerow(bt)
 
