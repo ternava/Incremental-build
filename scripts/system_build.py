@@ -8,6 +8,7 @@ def system_build_time(compile_time_opt):
     #subprocess.run(["make", "distclean"])
     subprocess.run(["./configure"] + compile_time_opt)
     start_time, start_resources = timestamp(), resource_usage(RUSAGE_SELF)
+    #subprocess.run(["/usr/bin/time make > file.txt"])
     subprocess.run(["make"])
     end_resources, end_time = resource_usage(RUSAGE_SELF), timestamp()
     

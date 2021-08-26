@@ -58,7 +58,6 @@ RUN mkdir src
 WORKDIR /src/
 COPY . .
 
-#RUN cd ..
 WORKDIR /
 RUN mkdir github
 WORKDIR /github/
@@ -81,7 +80,7 @@ RUN git commit -m "Initial project version"
 RUN python3 /src/scripts/is_gitignore.py
 
 # Make clean build of x264
-#RUN python3 /src/scripts/makeclean_single.py
+RUN python3 /src/scripts/makeclean_single.py
 RUN python3 /src/scripts/makeclean_sample.py
 # Incremental build of x264
 RUN python3 /src/scripts/incremental_sample.py
