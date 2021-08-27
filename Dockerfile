@@ -21,6 +21,14 @@ RUN sudo dnf install -y nasm \
                         wget \
                         yasm
 
+# Install the GNU time
+#RUN wget https://ftp.gnu.org/gnu/time/time-1.9.tar.gz
+#RUN tar -xf time-1.9.tar.gz
+#WORKDIR /time-1.9/
+#RUN ./configure --prefix=/usr && make
+#RUN make install
+
+WORKDIR /usr/lib/
 # Install the ffmpeg library for lavf support
 RUN sudo dnf -y install https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm
 RUN sudo dnf -y install https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
@@ -61,10 +69,6 @@ COPY . .
 WORKDIR /
 RUN mkdir github
 WORKDIR /github/
-#RUN git clone https://github.com/mirror/x264.git
-#WORKDIR /github/x264/
-#RUN git reset --hard ae03d92
-#RUN git checkout ae03d92
 
 RUN wget https://github.com/mirror/x264/archive/ae03d92.zip -O /tmp/x264.zip
 RUN unzip /tmp/x264.zip -d /tmp/
@@ -80,7 +84,7 @@ RUN git commit -m "Initial project version"
 RUN python3 /src/scripts/is_gitignore.py
 
 # Make clean build of x264
-RUN python3 /src/scripts/makeclean_single.py
+#RUN python3 /src/scripts/makeclean_single.py
 RUN python3 /src/scripts/makeclean_sample.py
 # Incremental build of x264
 RUN python3 /src/scripts/incremental_sample.py
