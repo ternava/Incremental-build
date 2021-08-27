@@ -16,6 +16,13 @@ RUN sudo dnf install -y libtool \
                         libvorbis-devel \
                         wget
 
+# Install the GNU time
+#RUN wget https://ftp.gnu.org/gnu/time/time-1.9.tar.gz
+#RUN tar -xf time-1.9.tar.gz
+#WORKDIR /time-1.9/
+#RUN ./configure --prefix=/usr && make
+#RUN make install
+
 ######################### END: Set up environment for sqlite ######################
 
 # Install python, pandas, and jupyter
@@ -29,13 +36,9 @@ RUN mkdir src
 WORKDIR /src/
 COPY . .
 
-RUN cd ..
+WORKDIR /
 RUN mkdir github
 WORKDIR /github/
-#RUN git clone https://github.com/sqlite/sqlite.git
-#WORKDIR /github/sqlite/
-#RUN git reset --hard version-3.35.4
-#RUN git checkout version-3.35.4
 
 RUN wget https://github.com/sqlite/sqlite/archive/version-3.35.4.zip -O /tmp/sqlite.zip
 RUN unzip /tmp/sqlite.zip -d /tmp/
@@ -51,7 +54,7 @@ RUN git commit -m "Initial project version"
 RUN python3 /src/scripts/is_gitignore.py
 
 # Make clean build of sqlite
-RUN python3 /src/scripts/makeclean_single.py
+#RUN python3 /src/scripts/makeclean_single.py
 RUN python3 /src/scripts/makeclean_sample.py
 # Incremental build of sqlite
 RUN python3 /src/scripts/incremental_sample.py

@@ -1,7 +1,7 @@
 import os.path
 from os import path
 
-def main():
+def remove_gitignore_content():
 
     path = '/github/sqlite/'
     if os.path.exists(str(path) + ".gitignore"):
@@ -12,5 +12,4 @@ def main():
         with open(os.path.join(path, ".gitignore"), 'w') as fp:
             pass
 
-if __name__== "__main__":
-   main()
+remove_gitignore_content()
