@@ -52,6 +52,6 @@ def incremental_build():
 
                         # stage all changes (i.e., object files) and commit
                         repo.git.add(all=True, force=True)
-                        repo.index.commit('incremental build of isqlite branch with ' + str(spec_file))
+                        repo.index.commit('incremental build of ' + str(br) + ' branch with ' + str(spec_file))
 
 incremental_build()
