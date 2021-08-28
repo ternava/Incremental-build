@@ -40,7 +40,7 @@ RUN mkdir src
 WORKDIR /src/
 COPY . .
 
-RUN cd ..
+WORKDIR /
 RUN mkdir github
 WORKDIR /github/
 #RUN git clone https://github.com/ThomasDickey/xterm-snapshots.git
