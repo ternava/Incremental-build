@@ -34,14 +34,14 @@ def incremental_build():
                 for idx, spec in enumerate(all_options):
                     if(idx == finx):
                         # To checkout the main starting branch
-                        #repo.git.checkout(br)
+                        repo.git.checkout(br)
 
                         # Create a new branch
-                        #repo.git.branch('i'+ str(br) + '-' + str(spec_file))
+                        repo.git.branch('i'+ str(br) + '-' + str(spec_file))
                         # To checkout the branch after creating it, to use it
-                        #repo.git.checkout('i'+ str(br) + '-' + str(spec_file))
+                        repo.git.checkout('i'+ str(br) + '-' + str(spec_file))
 
-                        repo.git.checkout(br, b='i'+ str(br) + '-' + str(spec_file)) 
+                        #repo.git.checkout(br, b='i'+ str(br) + '-' + str(spec_file)) 
 
                         print(repo.active_branch)
                         build_time = system_build_time(spec)
@@ -53,8 +53,5 @@ def incremental_build():
                         # stage all changes (i.e., object files) and commit
                         repo.git.add(all=True, force=True)
                         repo.index.commit('incremental build of ixterm branch with ' + str(spec_file))
-def main(): 
-    incremental_build()
 
-if __name__== "__main__":
-   main()
+incremental_build()
