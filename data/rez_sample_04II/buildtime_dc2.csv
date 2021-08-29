@@ -1,0 +1,21 @@
+Branch,Option,bt_real,bt_user,bt_sys,BinarySize
+x264-00006,"['--disable-gpl', '--disable-thread', '--bit-depth=all', '--chroma-format=420', '--disable-bashcompletion']",65.277,63.042,2.097,2879792
+x264-00015,"['--disable-asm', '--disable-thread', '--bit-depth=all', '--chroma-format=422', '--enable-bashcompletion']",33.623,31.719,1.827,2271288
+x264-00012,"['--disable-thread', '--disable-win32thread', '--bit-depth=all', '--chroma-format=400', '--disable-bashcompletion']",64.302,62.057,2.134,2825856
+x264-00014,"['--disable-asm', '--disable-gpl', '--disable-thread', '--disable-interlaced', '--bit-depth=8', '--chroma-format=420', '--disable-bashcompletion']",18.245,17.086,1.122,1554512
+x264-00005,"['--disable-gpl', '--disable-thread', '--bit-depth=all', '--chroma-format=all', '--disable-bashcompletion']",69.727,67.372,2.211,3094224
+x264-00020,"['--disable-thread', '--bit-depth=10', '--chroma-format=400', '--enable-bashcompletion']",31.388,29.998,1.303,1720304
+x264-00010,"['--disable-asm', '--disable-thread', '--bit-depth=all', '--chroma-format=444', '--disable-bashcompletion']",33.976,32.120,1.774,2278824
+x264-00004,"['--disable-thread', '--disable-win32thread', '--bit-depth=10', '--chroma-format=400', '--enable-bashcompletion']",31.255,29.889,1.281,1720304
+x264-00007,"['--disable-asm', '--disable-gpl', '--disable-interlaced', '--bit-depth=10', '--chroma-format=400', '--disable-bashcompletion']",17.670,16.422,1.189,1440352
+x264-00017,"['--disable-asm', '--disable-gpl', '--disable-thread', '--disable-win32thread', '--bit-depth=all', '--chroma-format=444', '--enable-bashcompletion']",34.076,32.210,1.785,2278824
+x264-00008,"['--disable-gpl', '--disable-win32thread', '--bit-depth=10', '--chroma-format=all', '--enable-bashcompletion']",34.402,32.937,1.385,1866608
+x264-00009,"['--bit-depth=8', '--chroma-format=all', '--enable-bashcompletion']",40.122,38.568,1.476,2046072
+x264-00019,"['--disable-win32thread', '--bit-depth=8', '--chroma-format=444', '--enable-bashcompletion']",38.142,36.655,1.420,1942672
+x264-00001,"['--bit-depth=8', '--chroma-format=422', '--disable-bashcompletion']",38.056,36.538,1.444,1938928
+x264-00011,"['--disable-asm', '--disable-gpl', '--bit-depth=all', '--chroma-format=420', '--enable-bashcompletion']",34.480,32.489,1.908,2281400
+x264-00016,"['--bit-depth=all', '--chroma-format=all', '--enable-bashcompletion']",70.684,68.188,2.353,3108808
+x264-00013,"['--disable-gpl', '--disable-thread', '--disable-interlaced', '--bit-depth=8', '--chroma-format=400', '--disable-bashcompletion']",36.295,34.886,1.349,1879304
+x264-00018,"['--disable-asm', '--disable-interlaced', '--bit-depth=8', '--chroma-format=400', '--disable-bashcompletion']",18.389,17.116,1.235,1539400
+x264-00003,"['--disable-asm', '--disable-thread', '--disable-win32thread', '--disable-interlaced', '--bit-depth=8', '--chroma-format=420', '--disable-bashcompletion']",18.291,17.083,1.170,1554512
+x264-00002,"['--disable-asm', '--disable-thread', '--disable-win32thread', '--bit-depth=10', '--chroma-format=444', '--enable-bashcompletion']",18.440,17.264,1.123,1488112
