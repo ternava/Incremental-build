@@ -1,0 +1,381 @@
+Branch,Option,bt_real,bt_user,bt_sys,BinarySize
+ix264-00001-00006,"['--disable-interlaced', '--bit-depth=all', '--chroma-format=422', '--enable-bashcompletion']",67.499,64.876,2.432,2845544
+ix264-00001-00015,"['--disable-asm', '--bit-depth=all', '--chroma-format=400', '--enable-bashcompletion']",34.457,32.372,1.971,2223376
+ix264-00001-00012,"['--disable-interlaced', '--bit-depth=8', '--chroma-format=422', '--enable-bashcompletion']",38.440,36.791,1.537,1914320
+ix264-00001-00014,"['--disable-asm', '--disable-thread', '--disable-win32thread', '--disable-interlaced', '--bit-depth=10', '--chroma-format=422', '--disable-bashcompletion']",18.218,16.982,1.172,1463912
+ix264-00001-00005,"['--disable-asm', '--disable-interlaced', '--bit-depth=all', '--chroma-format=all', '--enable-bashcompletion']",38.850,36.629,2.094,2442528
+ix264-00001-00020,"['--disable-interlaced', '--bit-depth=8', '--chroma-format=422', '--disable-bashcompletion']",38.730,37.066,1.547,1914320
+ix264-00001-00010,"['--disable-gpl', '--disable-thread', '--disable-win32thread', '--bit-depth=10', '--chroma-format=420', '--disable-bashcompletion']",32.592,31.241,1.265,1749400
+ix264-00001-00004,"['--disable-gpl', '--disable-interlaced', '--bit-depth=all', '--chroma-format=all', '--enable-bashcompletion']",71.584,68.947,2.441,3047312
+ix264-00001-00007,"['--disable-asm', '--disable-gpl', '--bit-depth=10', '--chroma-format=all', '--enable-bashcompletion']",21.598,20.221,1.302,1601416
+ix264-00001-00017,"['--disable-gpl', '--disable-win32thread', '--bit-depth=8', '--chroma-format=all', '--enable-bashcompletion']",41.191,39.472,1.596,2046072
+ix264-00001-00008,"['--disable-asm', '--disable-thread', '--disable-interlaced', '--bit-depth=8', '--chroma-format=all', '--disable-bashcompletion']",20.946,19.582,1.292,1657760
+ix264-00001-00009,"['--bit-depth=all', '--chroma-format=400', '--disable-bashcompletion']",67.226,64.625,2.423,2836352
+ix264-00001-00019,"['--disable-asm', '--disable-gpl', '--disable-win32thread', '--bit-depth=all', '--chroma-format=422', '--enable-bashcompletion']",35.700,33.574,2.004,2281776
+ix264-00001-00011,"['--disable-gpl', '--disable-thread', '--disable-interlaced', '--bit-depth=all', '--chroma-format=444', '--disable-bashcompletion']",66.680,64.262,2.228,2838496
+ix264-00001-00016,"['--disable-asm', '--disable-gpl', '--disable-thread', '--disable-interlaced', '--bit-depth=8', '--chroma-format=420', '--disable-bashcompletion']",18.697,17.468,1.171,1554512
+ix264-00001-00013,"['--disable-asm', '--disable-interlaced', '--bit-depth=10', '--chroma-format=all', '--enable-bashcompletion']",20.907,19.536,1.301,1572712
+ix264-00001-00018,"['--disable-asm', '--disable-gpl', '--disable-interlaced', '--bit-depth=8', '--chroma-format=422', '--enable-bashcompletion']",19.402,18.037,1.303,1564568
+ix264-00001-00003,"['--disable-asm', '--disable-gpl', '--disable-thread', '--disable-win32thread', '--bit-depth=all', '--chroma-format=444', '--enable-bashcompletion']",34.990,33.006,1.864,2278824
+ix264-00001-00002,"['--disable-gpl', '--bit-depth=8', '--chroma-format=420', '--disable-bashcompletion']",39.032,37.431,1.499,1938720
+ix264-00002-00006,"['--disable-interlaced', '--bit-depth=all', '--chroma-format=422', '--enable-bashcompletion']",67.120,64.609,2.330,2845544
+ix264-00002-00015,"['--disable-asm', '--bit-depth=all', '--chroma-format=400', '--enable-bashcompletion']",34.351,32.262,1.984,2223376
+ix264-00002-00012,"['--disable-interlaced', '--bit-depth=8', '--chroma-format=422', '--enable-bashcompletion']",38.469,36.815,1.547,1914320
+ix264-00002-00014,"['--disable-asm', '--disable-thread', '--disable-win32thread', '--disable-interlaced', '--bit-depth=10', '--chroma-format=422', '--disable-bashcompletion']",18.233,17.019,1.155,1463912
+ix264-00002-00005,"['--disable-asm', '--disable-interlaced', '--bit-depth=all', '--chroma-format=all', '--enable-bashcompletion']",38.616,36.436,2.049,2442528
+ix264-00002-00020,"['--disable-interlaced', '--bit-depth=8', '--chroma-format=422', '--disable-bashcompletion']",38.375,36.846,1.423,1914320
+ix264-00002-00010,"['--disable-gpl', '--disable-thread', '--disable-win32thread', '--bit-depth=10', '--chroma-format=420', '--disable-bashcompletion']",32.610,31.214,1.313,1749400
+ix264-00002-00004,"['--disable-gpl', '--disable-interlaced', '--bit-depth=all', '--chroma-format=all', '--enable-bashcompletion']",71.396,68.677,2.512,3047312
+ix264-00002-00007,"['--disable-asm', '--disable-gpl', '--bit-depth=10', '--chroma-format=all', '--enable-bashcompletion']",21.571,20.201,1.305,1601416
+ix264-00002-00017,"['--disable-gpl', '--disable-win32thread', '--bit-depth=8', '--chroma-format=all', '--enable-bashcompletion']",41.254,39.548,1.585,2046072
+ix264-00002-00008,"['--disable-asm', '--disable-thread', '--disable-interlaced', '--bit-depth=8', '--chroma-format=all', '--disable-bashcompletion']",21.097,19.765,1.268,1657760
+ix264-00002-00009,"['--bit-depth=all', '--chroma-format=400', '--disable-bashcompletion']",67.464,64.836,2.433,2836352
+ix264-00002-00019,"['--disable-asm', '--disable-gpl', '--disable-win32thread', '--bit-depth=all', '--chroma-format=422', '--enable-bashcompletion']",35.446,33.398,1.938,2281776
+ix264-00002-00001,"['--disable-interlaced', '--bit-depth=8', '--chroma-format=444', '--disable-bashcompletion']",38.575,36.902,1.564,1913968
+ix264-00002-00011,"['--disable-gpl', '--disable-thread', '--disable-interlaced', '--bit-depth=all', '--chroma-format=444', '--disable-bashcompletion']",66.666,64.292,2.186,2838496
+ix264-00002-00016,"['--disable-asm', '--disable-gpl', '--disable-thread', '--disable-interlaced', '--bit-depth=8', '--chroma-format=420', '--disable-bashcompletion']",18.738,17.472,1.210,1554512
+ix264-00002-00013,"['--disable-asm', '--disable-interlaced', '--bit-depth=10', '--chroma-format=all', '--enable-bashcompletion']",20.982,19.643,1.260,1572712
+ix264-00002-00018,"['--disable-asm', '--disable-gpl', '--disable-interlaced', '--bit-depth=8', '--chroma-format=422', '--enable-bashcompletion']",19.369,18.049,1.258,1564568
+ix264-00002-00003,"['--disable-asm', '--disable-gpl', '--disable-thread', '--disable-win32thread', '--bit-depth=all', '--chroma-format=444', '--enable-bashcompletion']",35.142,33.100,1.912,2278824
+ix264-00003-00006,"['--disable-interlaced', '--bit-depth=all', '--chroma-format=422', '--enable-bashcompletion']",67.111,64.566,2.368,2845544
+ix264-00003-00015,"['--disable-asm', '--bit-depth=all', '--chroma-format=400', '--enable-bashcompletion']",34.572,32.478,1.979,2223376
+ix264-00003-00012,"['--disable-interlaced', '--bit-depth=8', '--chroma-format=422', '--enable-bashcompletion']",38.391,36.694,1.599,1914320
+ix264-00003-00014,"['--disable-asm', '--disable-thread', '--disable-win32thread', '--disable-interlaced', '--bit-depth=10', '--chroma-format=422', '--disable-bashcompletion']",18.265,17.060,1.147,1463912
+ix264-00003-00005,"['--disable-asm', '--disable-interlaced', '--bit-depth=all', '--chroma-format=all', '--enable-bashcompletion']",38.588,36.353,2.109,2442528
+ix264-00003-00020,"['--disable-interlaced', '--bit-depth=8', '--chroma-format=422', '--disable-bashcompletion']",38.422,36.736,1.572,1914320
+ix264-00003-00010,"['--disable-gpl', '--disable-thread', '--disable-win32thread', '--bit-depth=10', '--chroma-format=420', '--disable-bashcompletion']",32.761,31.346,1.326,1749400
+ix264-00003-00004,"['--disable-gpl', '--disable-interlaced', '--bit-depth=all', '--chroma-format=all', '--enable-bashcompletion']",71.566,68.870,2.479,3047312
+ix264-00003-00007,"['--disable-asm', '--disable-gpl', '--bit-depth=10', '--chroma-format=all', '--enable-bashcompletion']",21.193,19.853,1.268,1601416
+ix264-00003-00017,"['--disable-gpl', '--disable-win32thread', '--bit-depth=8', '--chroma-format=all', '--enable-bashcompletion']",40.098,38.481,1.517,2046072
+ix264-00003-00008,"['--disable-asm', '--disable-thread', '--disable-interlaced', '--bit-depth=8', '--chroma-format=all', '--disable-bashcompletion']",20.476,19.191,1.221,1657760
+ix264-00003-00009,"['--bit-depth=all', '--chroma-format=400', '--disable-bashcompletion']",65.447,63.000,2.290,2836352
+ix264-00003-00019,"['--disable-asm', '--disable-gpl', '--disable-win32thread', '--bit-depth=all', '--chroma-format=422', '--enable-bashcompletion']",34.655,32.578,1.979,2281776
+ix264-00003-00001,"['--disable-interlaced', '--bit-depth=8', '--chroma-format=444', '--disable-bashcompletion']",37.502,35.929,1.484,1913968
+ix264-00003-00011,"['--disable-gpl', '--disable-thread', '--disable-interlaced', '--bit-depth=all', '--chroma-format=444', '--disable-bashcompletion']",64.707,62.421,2.143,2838496
+ix264-00003-00016,"['--disable-asm', '--disable-gpl', '--disable-thread', '--disable-interlaced', '--bit-depth=8', '--chroma-format=420', '--disable-bashcompletion']",18.241,17.030,1.162,1554512
+ix264-00003-00013,"['--disable-asm', '--disable-interlaced', '--bit-depth=10', '--chroma-format=all', '--enable-bashcompletion']",20.377,19.091,1.225,1572712
+ix264-00003-00018,"['--disable-asm', '--disable-gpl', '--disable-interlaced', '--bit-depth=8', '--chroma-format=422', '--enable-bashcompletion']",18.853,17.525,1.267,1564568
+ix264-00003-00002,"['--disable-gpl', '--bit-depth=8', '--chroma-format=420', '--disable-bashcompletion']",37.908,36.309,1.508,1938720
+ix264-00004-00006,"['--disable-interlaced', '--bit-depth=all', '--chroma-format=422', '--enable-bashcompletion']",65.438,62.943,2.323,2845544
+ix264-00004-00015,"['--disable-asm', '--bit-depth=all', '--chroma-format=400', '--enable-bashcompletion']",33.530,31.420,2.011,2223376
+ix264-00004-00012,"['--disable-interlaced', '--bit-depth=8', '--chroma-format=422', '--enable-bashcompletion']",37.455,35.810,1.541,1914320
+ix264-00004-00014,"['--disable-asm', '--disable-thread', '--disable-win32thread', '--disable-interlaced', '--bit-depth=10', '--chroma-format=422', '--disable-bashcompletion']",17.756,16.589,1.110,1463912
+ix264-00004-00005,"['--disable-asm', '--disable-interlaced', '--bit-depth=all', '--chroma-format=all', '--enable-bashcompletion']",37.553,35.417,2.028,2442528
+ix264-00004-00020,"['--disable-interlaced', '--bit-depth=8', '--chroma-format=422', '--disable-bashcompletion']",37.412,35.825,1.488,1914320
+ix264-00004-00010,"['--disable-gpl', '--disable-thread', '--disable-win32thread', '--bit-depth=10', '--chroma-format=420', '--disable-bashcompletion']",31.965,30.576,1.294,1749400
+ix264-00004-00007,"['--disable-asm', '--disable-gpl', '--bit-depth=10', '--chroma-format=all', '--enable-bashcompletion']",21.067,19.695,1.311,1601416
+ix264-00004-00017,"['--disable-gpl', '--disable-win32thread', '--bit-depth=8', '--chroma-format=all', '--enable-bashcompletion']",40.179,38.571,1.509,2046072
+ix264-00004-00008,"['--disable-asm', '--disable-thread', '--disable-interlaced', '--bit-depth=8', '--chroma-format=all', '--disable-bashcompletion']",20.431,19.192,1.185,1657760
+ix264-00004-00009,"['--bit-depth=all', '--chroma-format=400', '--disable-bashcompletion']",65.557,62.997,2.386,2836352
+ix264-00004-00019,"['--disable-asm', '--disable-gpl', '--disable-win32thread', '--bit-depth=all', '--chroma-format=422', '--enable-bashcompletion']",34.672,32.537,2.034,2281776
+ix264-00004-00001,"['--disable-interlaced', '--bit-depth=8', '--chroma-format=444', '--disable-bashcompletion']",37.623,36.044,1.477,1913968
+ix264-00004-00011,"['--disable-gpl', '--disable-thread', '--disable-interlaced', '--bit-depth=all', '--chroma-format=444', '--disable-bashcompletion']",64.947,62.581,2.198,2838496
+ix264-00004-00016,"['--disable-asm', '--disable-gpl', '--disable-thread', '--disable-interlaced', '--bit-depth=8', '--chroma-format=420', '--disable-bashcompletion']",18.250,16.977,1.215,1554512
+ix264-00004-00013,"['--disable-asm', '--disable-interlaced', '--bit-depth=10', '--chroma-format=all', '--enable-bashcompletion']",20.402,19.047,1.296,1572712
+ix264-00004-00018,"['--disable-asm', '--disable-gpl', '--disable-interlaced', '--bit-depth=8', '--chroma-format=422', '--enable-bashcompletion']",18.849,17.531,1.263,1564568
+ix264-00004-00003,"['--disable-asm', '--disable-gpl', '--disable-thread', '--disable-win32thread', '--bit-depth=all', '--chroma-format=444', '--enable-bashcompletion']",34.092,32.217,1.782,2278824
+ix264-00004-00002,"['--disable-gpl', '--bit-depth=8', '--chroma-format=420', '--disable-bashcompletion']",37.969,36.365,1.499,1938720
+ix264-00005-00006,"['--disable-interlaced', '--bit-depth=all', '--chroma-format=422', '--enable-bashcompletion']",65.766,63.272,2.342,2845544
+ix264-00005-00015,"['--disable-asm', '--bit-depth=all', '--chroma-format=400', '--enable-bashcompletion']",33.560,31.471,1.989,2223376
+ix264-00005-00012,"['--disable-interlaced', '--bit-depth=8', '--chroma-format=422', '--enable-bashcompletion']",37.350,35.751,1.509,1914320
+ix264-00005-00014,"['--disable-asm', '--disable-thread', '--disable-win32thread', '--disable-interlaced', '--bit-depth=10', '--chroma-format=422', '--disable-bashcompletion']",17.758,16.553,1.150,1463912
+ix264-00005-00020,"['--disable-interlaced', '--bit-depth=8', '--chroma-format=422', '--disable-bashcompletion']",37.347,35.808,1.449,1914320
+ix264-00005-00010,"['--disable-gpl', '--disable-thread', '--disable-win32thread', '--bit-depth=10', '--chroma-format=420', '--disable-bashcompletion']",31.904,30.495,1.329,1749400
+ix264-00005-00004,"['--disable-gpl', '--disable-interlaced', '--bit-depth=all', '--chroma-format=all', '--enable-bashcompletion']",69.439,66.893,2.374,3047312
+ix264-00005-00007,"['--disable-asm', '--disable-gpl', '--bit-depth=10', '--chroma-format=all', '--enable-bashcompletion']",21.117,19.793,1.259,1601416
+ix264-00005-00017,"['--disable-gpl', '--disable-win32thread', '--bit-depth=8', '--chroma-format=all', '--enable-bashcompletion']",40.087,38.495,1.491,2046072
+ix264-00005-00008,"['--disable-asm', '--disable-thread', '--disable-interlaced', '--bit-depth=8', '--chroma-format=all', '--disable-bashcompletion']",20.468,19.220,1.180,1657760
+ix264-00005-00009,"['--bit-depth=all', '--chroma-format=400', '--disable-bashcompletion']",65.619,62.979,2.477,2836352
+ix264-00005-00019,"['--disable-asm', '--disable-gpl', '--disable-win32thread', '--bit-depth=all', '--chroma-format=422', '--enable-bashcompletion']",34.645,32.587,1.960,2281776
+ix264-00005-00001,"['--disable-interlaced', '--bit-depth=8', '--chroma-format=444', '--disable-bashcompletion']",37.618,36.014,1.508,1913968
+ix264-00005-00011,"['--disable-gpl', '--disable-thread', '--disable-interlaced', '--bit-depth=all', '--chroma-format=444', '--disable-bashcompletion']",64.704,62.383,2.160,2838496
+ix264-00005-00016,"['--disable-asm', '--disable-gpl', '--disable-thread', '--disable-interlaced', '--bit-depth=8', '--chroma-format=420', '--disable-bashcompletion']",18.255,17.062,1.136,1554512
+ix264-00005-00013,"['--disable-asm', '--disable-interlaced', '--bit-depth=10', '--chroma-format=all', '--enable-bashcompletion']",20.341,19.035,1.246,1572712
+ix264-00005-00018,"['--disable-asm', '--disable-gpl', '--disable-interlaced', '--bit-depth=8', '--chroma-format=422', '--enable-bashcompletion']",18.825,17.491,1.279,1564568
+ix264-00005-00003,"['--disable-asm', '--disable-gpl', '--disable-thread', '--disable-win32thread', '--bit-depth=all', '--chroma-format=444', '--enable-bashcompletion']",34.051,32.165,1.795,2278824
+ix264-00005-00002,"['--disable-gpl', '--bit-depth=8', '--chroma-format=420', '--disable-bashcompletion']",37.905,36.361,1.453,1938720
+ix264-00006-00015,"['--disable-asm', '--bit-depth=all', '--chroma-format=400', '--enable-bashcompletion']",33.602,31.535,1.964,2223376
+ix264-00006-00012,"['--disable-interlaced', '--bit-depth=8', '--chroma-format=422', '--enable-bashcompletion']",37.415,35.811,1.506,1914320
+ix264-00006-00014,"['--disable-asm', '--disable-thread', '--disable-win32thread', '--disable-interlaced', '--bit-depth=10', '--chroma-format=422', '--disable-bashcompletion']",17.704,16.499,1.148,1463912
+ix264-00006-00005,"['--disable-asm', '--disable-interlaced', '--bit-depth=all', '--chroma-format=all', '--enable-bashcompletion']",37.554,35.437,2.005,2442528
+ix264-00006-00020,"['--disable-interlaced', '--bit-depth=8', '--chroma-format=422', '--disable-bashcompletion']",37.422,35.842,1.476,1914320
+ix264-00006-00010,"['--disable-gpl', '--disable-thread', '--disable-win32thread', '--bit-depth=10', '--chroma-format=420', '--disable-bashcompletion']",31.922,30.521,1.316,1749400
+ix264-00006-00004,"['--disable-gpl', '--disable-interlaced', '--bit-depth=all', '--chroma-format=all', '--enable-bashcompletion']",69.455,66.860,2.395,3047312
+ix264-00006-00007,"['--disable-asm', '--disable-gpl', '--bit-depth=10', '--chroma-format=all', '--enable-bashcompletion']",21.113,19.787,1.251,1601416
+ix264-00006-00017,"['--disable-gpl', '--disable-win32thread', '--bit-depth=8', '--chroma-format=all', '--enable-bashcompletion']",40.133,38.511,1.518,2046072
+ix264-00006-00008,"['--disable-asm', '--disable-thread', '--disable-interlaced', '--bit-depth=8', '--chroma-format=all', '--disable-bashcompletion']",20.434,19.176,1.195,1657760
+ix264-00006-00009,"['--bit-depth=all', '--chroma-format=400', '--disable-bashcompletion']",65.580,63.061,2.341,2836352
+ix264-00006-00019,"['--disable-asm', '--disable-gpl', '--disable-win32thread', '--bit-depth=all', '--chroma-format=422', '--enable-bashcompletion']",34.573,32.516,1.949,2281776
+ix264-00006-00001,"['--disable-interlaced', '--bit-depth=8', '--chroma-format=444', '--disable-bashcompletion']",37.553,35.962,1.493,1913968
+ix264-00006-00011,"['--disable-gpl', '--disable-thread', '--disable-interlaced', '--bit-depth=all', '--chroma-format=444', '--disable-bashcompletion']",64.939,62.596,2.160,2838496
+ix264-00006-00016,"['--disable-asm', '--disable-gpl', '--disable-thread', '--disable-interlaced', '--bit-depth=8', '--chroma-format=420', '--disable-bashcompletion']",18.265,17.063,1.142,1554512
+ix264-00006-00013,"['--disable-asm', '--disable-interlaced', '--bit-depth=10', '--chroma-format=all', '--enable-bashcompletion']",20.387,19.098,1.229,1572712
+ix264-00006-00018,"['--disable-asm', '--disable-gpl', '--disable-interlaced', '--bit-depth=8', '--chroma-format=422', '--enable-bashcompletion']",18.863,17.556,1.250,1564568
+ix264-00006-00003,"['--disable-asm', '--disable-gpl', '--disable-thread', '--disable-win32thread', '--bit-depth=all', '--chroma-format=444', '--enable-bashcompletion']",34.121,32.168,1.863,2278824
+ix264-00006-00002,"['--disable-gpl', '--bit-depth=8', '--chroma-format=420', '--disable-bashcompletion']",38.128,36.530,1.493,1938720
+ix264-00007-00006,"['--disable-interlaced', '--bit-depth=all', '--chroma-format=422', '--enable-bashcompletion']",65.265,62.780,2.336,2845544
+ix264-00007-00015,"['--disable-asm', '--bit-depth=all', '--chroma-format=400', '--enable-bashcompletion']",33.593,31.493,2.036,2223376
+ix264-00007-00012,"['--disable-interlaced', '--bit-depth=8', '--chroma-format=422', '--enable-bashcompletion']",37.489,35.894,1.518,1914320
+ix264-00007-00014,"['--disable-asm', '--disable-thread', '--disable-win32thread', '--disable-interlaced', '--bit-depth=10', '--chroma-format=422', '--disable-bashcompletion']",17.723,16.587,1.083,1463912
+ix264-00007-00005,"['--disable-asm', '--disable-interlaced', '--bit-depth=all', '--chroma-format=all', '--enable-bashcompletion']",37.663,35.582,1.990,2442528
+ix264-00007-00020,"['--disable-interlaced', '--bit-depth=8', '--chroma-format=422', '--disable-bashcompletion']",37.498,35.922,1.510,1914320
+ix264-00007-00010,"['--disable-gpl', '--disable-thread', '--disable-win32thread', '--bit-depth=10', '--chroma-format=420', '--disable-bashcompletion']",31.849,30.497,1.274,1749400
+ix264-00007-00004,"['--disable-gpl', '--disable-interlaced', '--bit-depth=all', '--chroma-format=all', '--enable-bashcompletion']",69.403,66.906,2.352,3047312
+ix264-00007-00017,"['--disable-gpl', '--disable-win32thread', '--bit-depth=8', '--chroma-format=all', '--enable-bashcompletion']",40.108,38.512,1.520,2046072
+ix264-00007-00008,"['--disable-asm', '--disable-thread', '--disable-interlaced', '--bit-depth=8', '--chroma-format=all', '--disable-bashcompletion']",20.571,19.327,1.199,1657760
+ix264-00007-00009,"['--bit-depth=all', '--chroma-format=400', '--disable-bashcompletion']",65.486,62.934,2.412,2836352
+ix264-00007-00019,"['--disable-asm', '--disable-gpl', '--disable-win32thread', '--bit-depth=all', '--chroma-format=422', '--enable-bashcompletion']",34.802,32.732,1.991,2281776
+ix264-00007-00001,"['--disable-interlaced', '--bit-depth=8', '--chroma-format=444', '--disable-bashcompletion']",38.028,36.375,1.552,1913968
+ix264-00007-00011,"['--disable-gpl', '--disable-thread', '--disable-interlaced', '--bit-depth=all', '--chroma-format=444', '--disable-bashcompletion']",64.940,62.630,2.166,2838496
+ix264-00007-00016,"['--disable-asm', '--disable-gpl', '--disable-thread', '--disable-interlaced', '--bit-depth=8', '--chroma-format=420', '--disable-bashcompletion']",18.352,17.150,1.163,1554512
+ix264-00007-00013,"['--disable-asm', '--disable-interlaced', '--bit-depth=10', '--chroma-format=all', '--enable-bashcompletion']",20.360,19.026,1.275,1572712
+ix264-00007-00018,"['--disable-asm', '--disable-gpl', '--disable-interlaced', '--bit-depth=8', '--chroma-format=422', '--enable-bashcompletion']",18.990,17.692,1.261,1564568
+ix264-00007-00003,"['--disable-asm', '--disable-gpl', '--disable-thread', '--disable-win32thread', '--bit-depth=all', '--chroma-format=444', '--enable-bashcompletion']",34.266,32.322,1.860,2278824
+ix264-00007-00002,"['--disable-gpl', '--bit-depth=8', '--chroma-format=420', '--disable-bashcompletion']",38.084,36.502,1.509,1938720
+ix264-00008-00006,"['--disable-interlaced', '--bit-depth=all', '--chroma-format=422', '--enable-bashcompletion']",65.461,62.905,2.397,2845544
+ix264-00008-00015,"['--disable-asm', '--bit-depth=all', '--chroma-format=400', '--enable-bashcompletion']",33.661,31.561,1.995,2223376
+ix264-00008-00012,"['--disable-interlaced', '--bit-depth=8', '--chroma-format=422', '--enable-bashcompletion']",37.264,35.686,1.492,1914320
+ix264-00008-00014,"['--disable-asm', '--disable-thread', '--disable-win32thread', '--disable-interlaced', '--bit-depth=10', '--chroma-format=422', '--disable-bashcompletion']",17.816,16.624,1.129,1463912
+ix264-00008-00005,"['--disable-asm', '--disable-interlaced', '--bit-depth=all', '--chroma-format=all', '--enable-bashcompletion']",37.548,35.429,2.008,2442528
+ix264-00008-00020,"['--disable-interlaced', '--bit-depth=8', '--chroma-format=422', '--disable-bashcompletion']",37.235,35.680,1.468,1914320
+ix264-00008-00010,"['--disable-gpl', '--disable-thread', '--disable-win32thread', '--bit-depth=10', '--chroma-format=420', '--disable-bashcompletion']",32.066,30.670,1.303,1749400
+ix264-00008-00004,"['--disable-gpl', '--disable-interlaced', '--bit-depth=all', '--chroma-format=all', '--enable-bashcompletion']",69.502,66.854,2.475,3047312
+ix264-00008-00007,"['--disable-asm', '--disable-gpl', '--bit-depth=10', '--chroma-format=all', '--enable-bashcompletion']",21.104,19.775,1.265,1601416
+ix264-00008-00017,"['--disable-gpl', '--disable-win32thread', '--bit-depth=8', '--chroma-format=all', '--enable-bashcompletion']",40.181,38.512,1.573,2046072
+ix264-00008-00009,"['--bit-depth=all', '--chroma-format=400', '--disable-bashcompletion']",65.459,62.942,2.359,2836352
+ix264-00008-00019,"['--disable-asm', '--disable-gpl', '--disable-win32thread', '--bit-depth=all', '--chroma-format=422', '--enable-bashcompletion']",34.730,32.634,1.988,2281776
+ix264-00008-00001,"['--disable-interlaced', '--bit-depth=8', '--chroma-format=444', '--disable-bashcompletion']",37.743,36.136,1.520,1913968
+ix264-00008-00011,"['--disable-gpl', '--disable-thread', '--disable-interlaced', '--bit-depth=all', '--chroma-format=444', '--disable-bashcompletion']",64.703,62.423,2.137,2838496
+ix264-00008-00016,"['--disable-asm', '--disable-gpl', '--disable-thread', '--disable-interlaced', '--bit-depth=8', '--chroma-format=420', '--disable-bashcompletion']",18.258,17.017,1.179,1554512
+ix264-00008-00013,"['--disable-asm', '--disable-interlaced', '--bit-depth=10', '--chroma-format=all', '--enable-bashcompletion']",20.375,19.063,1.243,1572712
+ix264-00008-00018,"['--disable-asm', '--disable-gpl', '--disable-interlaced', '--bit-depth=8', '--chroma-format=422', '--enable-bashcompletion']",18.866,17.550,1.260,1564568
+ix264-00008-00003,"['--disable-asm', '--disable-gpl', '--disable-thread', '--disable-win32thread', '--bit-depth=all', '--chroma-format=444', '--enable-bashcompletion']",34.301,32.360,1.844,2278824
+ix264-00008-00002,"['--disable-gpl', '--bit-depth=8', '--chroma-format=420', '--disable-bashcompletion']",37.949,36.307,1.548,1938720
+ix264-00009-00006,"['--disable-interlaced', '--bit-depth=all', '--chroma-format=422', '--enable-bashcompletion']",65.293,62.811,2.309,2845544
+ix264-00009-00015,"['--disable-asm', '--bit-depth=all', '--chroma-format=400', '--enable-bashcompletion']",33.557,31.578,1.886,2223376
+ix264-00009-00012,"['--disable-interlaced', '--bit-depth=8', '--chroma-format=422', '--enable-bashcompletion']",37.398,35.775,1.521,1914320
+ix264-00009-00014,"['--disable-asm', '--disable-thread', '--disable-win32thread', '--disable-interlaced', '--bit-depth=10', '--chroma-format=422', '--disable-bashcompletion']",17.818,16.635,1.131,1463912
+ix264-00009-00005,"['--disable-asm', '--disable-interlaced', '--bit-depth=all', '--chroma-format=all', '--enable-bashcompletion']",37.572,35.389,2.059,2442528
+ix264-00009-00020,"['--disable-interlaced', '--bit-depth=8', '--chroma-format=422', '--disable-bashcompletion']",37.407,35.819,1.490,1914320
+ix264-00009-00010,"['--disable-gpl', '--disable-thread', '--disable-win32thread', '--bit-depth=10', '--chroma-format=420', '--disable-bashcompletion']",31.921,30.533,1.303,1749400
+ix264-00009-00004,"['--disable-gpl', '--disable-interlaced', '--bit-depth=all', '--chroma-format=all', '--enable-bashcompletion']",69.414,66.766,2.466,3047312
+ix264-00009-00007,"['--disable-asm', '--disable-gpl', '--bit-depth=10', '--chroma-format=all', '--enable-bashcompletion']",21.064,19.789,1.206,1601416
+ix264-00009-00017,"['--disable-gpl', '--disable-win32thread', '--bit-depth=8', '--chroma-format=all', '--enable-bashcompletion']",40.169,38.523,1.533,2046072
+ix264-00009-00008,"['--disable-asm', '--disable-thread', '--disable-interlaced', '--bit-depth=8', '--chroma-format=all', '--disable-bashcompletion']",20.435,19.201,1.180,1657760
+ix264-00009-00019,"['--disable-asm', '--disable-gpl', '--disable-win32thread', '--bit-depth=all', '--chroma-format=422', '--enable-bashcompletion']",34.727,32.599,2.023,2281776
+ix264-00009-00001,"['--disable-interlaced', '--bit-depth=8', '--chroma-format=444', '--disable-bashcompletion']",37.617,35.997,1.520,1913968
+ix264-00009-00011,"['--disable-gpl', '--disable-thread', '--disable-interlaced', '--bit-depth=all', '--chroma-format=444', '--disable-bashcompletion']",64.760,62.405,2.179,2838496
+ix264-00009-00016,"['--disable-asm', '--disable-gpl', '--disable-thread', '--disable-interlaced', '--bit-depth=8', '--chroma-format=420', '--disable-bashcompletion']",18.290,16.992,1.242,1554512
+ix264-00009-00013,"['--disable-asm', '--disable-interlaced', '--bit-depth=10', '--chroma-format=all', '--enable-bashcompletion']",20.429,19.122,1.244,1572712
+ix264-00009-00018,"['--disable-asm', '--disable-gpl', '--disable-interlaced', '--bit-depth=8', '--chroma-format=422', '--enable-bashcompletion']",18.913,17.521,1.329,1564568
+ix264-00009-00003,"['--disable-asm', '--disable-gpl', '--disable-thread', '--disable-win32thread', '--bit-depth=all', '--chroma-format=444', '--enable-bashcompletion']",34.154,32.214,1.848,2278824
+ix264-00009-00002,"['--disable-gpl', '--bit-depth=8', '--chroma-format=420', '--disable-bashcompletion']",37.951,36.319,1.527,1938720
+ix264-00010-00006,"['--disable-interlaced', '--bit-depth=all', '--chroma-format=422', '--enable-bashcompletion']",65.405,62.893,2.367,2845544
+ix264-00010-00015,"['--disable-asm', '--bit-depth=all', '--chroma-format=400', '--enable-bashcompletion']",33.594,31.496,2.025,2223376
+ix264-00010-00012,"['--disable-interlaced', '--bit-depth=8', '--chroma-format=422', '--enable-bashcompletion']",37.503,35.953,1.482,1914320
+ix264-00010-00014,"['--disable-asm', '--disable-thread', '--disable-win32thread', '--disable-interlaced', '--bit-depth=10', '--chroma-format=422', '--disable-bashcompletion']",17.817,16.612,1.152,1463912
+ix264-00010-00005,"['--disable-asm', '--disable-interlaced', '--bit-depth=all', '--chroma-format=all', '--enable-bashcompletion']",37.723,35.588,2.042,2442528
+ix264-00010-00020,"['--disable-interlaced', '--bit-depth=8', '--chroma-format=422', '--disable-bashcompletion']",37.614,35.993,1.553,1914320
+ix264-00010-00004,"['--disable-gpl', '--disable-interlaced', '--bit-depth=all', '--chroma-format=all', '--enable-bashcompletion']",69.516,67.023,2.354,3047312
+ix264-00010-00007,"['--disable-asm', '--disable-gpl', '--bit-depth=10', '--chroma-format=all', '--enable-bashcompletion']",21.078,19.749,1.260,1601416
+ix264-00010-00017,"['--disable-gpl', '--disable-win32thread', '--bit-depth=8', '--chroma-format=all', '--enable-bashcompletion']",40.217,38.610,1.521,2046072
+ix264-00010-00008,"['--disable-asm', '--disable-thread', '--disable-interlaced', '--bit-depth=8', '--chroma-format=all', '--disable-bashcompletion']",20.546,19.251,1.257,1657760
+ix264-00010-00009,"['--bit-depth=all', '--chroma-format=400', '--disable-bashcompletion']",65.691,63.168,2.387,2836352
+ix264-00010-00019,"['--disable-asm', '--disable-gpl', '--disable-win32thread', '--bit-depth=all', '--chroma-format=422', '--enable-bashcompletion']",34.746,32.625,2.033,2281776
+ix264-00010-00001,"['--disable-interlaced', '--bit-depth=8', '--chroma-format=444', '--disable-bashcompletion']",37.686,36.092,1.529,1913968
+ix264-00010-00011,"['--disable-gpl', '--disable-thread', '--disable-interlaced', '--bit-depth=all', '--chroma-format=444', '--disable-bashcompletion']",64.804,62.506,2.167,2838496
+ix264-00010-00016,"['--disable-asm', '--disable-gpl', '--disable-thread', '--disable-interlaced', '--bit-depth=8', '--chroma-format=420', '--disable-bashcompletion']",18.367,17.106,1.232,1554512
+ix264-00010-00013,"['--disable-asm', '--disable-interlaced', '--bit-depth=10', '--chroma-format=all', '--enable-bashcompletion']",20.414,19.067,1.286,1572712
+ix264-00010-00018,"['--disable-asm', '--disable-gpl', '--disable-interlaced', '--bit-depth=8', '--chroma-format=422', '--enable-bashcompletion']",18.932,17.645,1.250,1564568
+ix264-00010-00003,"['--disable-asm', '--disable-gpl', '--disable-thread', '--disable-win32thread', '--bit-depth=all', '--chroma-format=444', '--enable-bashcompletion']",34.214,32.310,1.830,2278824
+ix264-00010-00002,"['--disable-gpl', '--bit-depth=8', '--chroma-format=420', '--disable-bashcompletion']",38.080,36.503,1.502,1938720
+ix264-00011-00006,"['--disable-interlaced', '--bit-depth=all', '--chroma-format=422', '--enable-bashcompletion']",65.322,62.808,2.332,2845544
+ix264-00011-00015,"['--disable-asm', '--bit-depth=all', '--chroma-format=400', '--enable-bashcompletion']",33.501,31.389,2.020,2223376
+ix264-00011-00012,"['--disable-interlaced', '--bit-depth=8', '--chroma-format=422', '--enable-bashcompletion']",37.434,35.834,1.502,1914320
+ix264-00011-00014,"['--disable-asm', '--disable-thread', '--disable-win32thread', '--disable-interlaced', '--bit-depth=10', '--chroma-format=422', '--disable-bashcompletion']",17.755,16.583,1.118,1463912
+ix264-00011-00005,"['--disable-asm', '--disable-interlaced', '--bit-depth=all', '--chroma-format=all', '--enable-bashcompletion']",37.611,35.477,2.017,2442528
+ix264-00011-00020,"['--disable-interlaced', '--bit-depth=8', '--chroma-format=422', '--disable-bashcompletion']",37.380,35.723,1.565,1914320
+ix264-00011-00010,"['--disable-gpl', '--disable-thread', '--disable-win32thread', '--bit-depth=10', '--chroma-format=420', '--disable-bashcompletion']",31.987,30.564,1.341,1749400
+ix264-00011-00004,"['--disable-gpl', '--disable-interlaced', '--bit-depth=all', '--chroma-format=all', '--enable-bashcompletion']",69.285,66.721,2.374,3047312
+ix264-00011-00007,"['--disable-asm', '--disable-gpl', '--bit-depth=10', '--chroma-format=all', '--enable-bashcompletion']",21.140,19.781,1.289,1601416
+ix264-00011-00017,"['--disable-gpl', '--disable-win32thread', '--bit-depth=8', '--chroma-format=all', '--enable-bashcompletion']",40.792,39.156,1.537,2046072
+ix264-00011-00008,"['--disable-asm', '--disable-thread', '--disable-interlaced', '--bit-depth=8', '--chroma-format=all', '--disable-bashcompletion']",20.431,19.147,1.223,1657760
+ix264-00011-00009,"['--bit-depth=all', '--chroma-format=400', '--disable-bashcompletion']",65.669,63.138,2.355,2836352
+ix264-00011-00019,"['--disable-asm', '--disable-gpl', '--disable-win32thread', '--bit-depth=all', '--chroma-format=422', '--enable-bashcompletion']",34.646,32.502,2.036,2281776
+ix264-00011-00001,"['--disable-interlaced', '--bit-depth=8', '--chroma-format=444', '--disable-bashcompletion']",37.665,36.060,1.507,1913968
+ix264-00011-00016,"['--disable-asm', '--disable-gpl', '--disable-thread', '--disable-interlaced', '--bit-depth=8', '--chroma-format=420', '--disable-bashcompletion']",18.298,17.029,1.214,1554512
+ix264-00011-00013,"['--disable-asm', '--disable-interlaced', '--bit-depth=10', '--chroma-format=all', '--enable-bashcompletion']",20.386,19.110,1.210,1572712
+ix264-00011-00018,"['--disable-asm', '--disable-gpl', '--disable-interlaced', '--bit-depth=8', '--chroma-format=422', '--enable-bashcompletion']",18.914,17.563,1.293,1564568
+ix264-00011-00003,"['--disable-asm', '--disable-gpl', '--disable-thread', '--disable-win32thread', '--bit-depth=all', '--chroma-format=444', '--enable-bashcompletion']",34.040,32.110,1.841,2278824
+ix264-00011-00002,"['--disable-gpl', '--bit-depth=8', '--chroma-format=420', '--disable-bashcompletion']",37.977,36.376,1.494,1938720
+ix264-00012-00006,"['--disable-interlaced', '--bit-depth=all', '--chroma-format=422', '--enable-bashcompletion']",65.380,62.805,2.408,2845544
+ix264-00012-00015,"['--disable-asm', '--bit-depth=all', '--chroma-format=400', '--enable-bashcompletion']",33.590,31.491,2.002,2223376
+ix264-00012-00014,"['--disable-asm', '--disable-thread', '--disable-win32thread', '--disable-interlaced', '--bit-depth=10', '--chroma-format=422', '--disable-bashcompletion']",17.734,16.573,1.112,1463912
+ix264-00012-00005,"['--disable-asm', '--disable-interlaced', '--bit-depth=all', '--chroma-format=all', '--enable-bashcompletion']",37.622,35.414,2.095,2442528
+ix264-00012-00020,"['--disable-interlaced', '--bit-depth=8', '--chroma-format=422', '--disable-bashcompletion']",37.394,35.777,1.519,1914320
+ix264-00012-00010,"['--disable-gpl', '--disable-thread', '--disable-win32thread', '--bit-depth=10', '--chroma-format=420', '--disable-bashcompletion']",31.972,30.544,1.357,1749400
+ix264-00012-00004,"['--disable-gpl', '--disable-interlaced', '--bit-depth=all', '--chroma-format=all', '--enable-bashcompletion']",69.331,66.714,2.442,3047312
+ix264-00012-00007,"['--disable-asm', '--disable-gpl', '--bit-depth=10', '--chroma-format=all', '--enable-bashcompletion']",21.111,19.720,1.329,1601416
+ix264-00012-00017,"['--disable-gpl', '--disable-win32thread', '--bit-depth=8', '--chroma-format=all', '--enable-bashcompletion']",40.131,38.458,1.564,2046072
+ix264-00012-00008,"['--disable-asm', '--disable-thread', '--disable-interlaced', '--bit-depth=8', '--chroma-format=all', '--disable-bashcompletion']",20.480,19.181,1.234,1657760
+ix264-00012-00009,"['--bit-depth=all', '--chroma-format=400', '--disable-bashcompletion']",65.675,63.062,2.452,2836352
+ix264-00012-00019,"['--disable-asm', '--disable-gpl', '--disable-win32thread', '--bit-depth=all', '--chroma-format=422', '--enable-bashcompletion']",34.666,32.541,2.024,2281776
+ix264-00012-00001,"['--disable-interlaced', '--bit-depth=8', '--chroma-format=444', '--disable-bashcompletion']",37.546,35.940,1.515,1913968
+ix264-00012-00011,"['--disable-gpl', '--disable-thread', '--disable-interlaced', '--bit-depth=all', '--chroma-format=444', '--disable-bashcompletion']",64.692,62.418,2.123,2838496
+ix264-00012-00016,"['--disable-asm', '--disable-gpl', '--disable-thread', '--disable-interlaced', '--bit-depth=8', '--chroma-format=420', '--disable-bashcompletion']",18.276,17.020,1.208,1554512
+ix264-00012-00013,"['--disable-asm', '--disable-interlaced', '--bit-depth=10', '--chroma-format=all', '--enable-bashcompletion']",20.348,19.048,1.239,1572712
+ix264-00012-00018,"['--disable-asm', '--disable-gpl', '--disable-interlaced', '--bit-depth=8', '--chroma-format=422', '--enable-bashcompletion']",18.877,17.493,1.330,1564568
+ix264-00012-00003,"['--disable-asm', '--disable-gpl', '--disable-thread', '--disable-win32thread', '--bit-depth=all', '--chroma-format=444', '--enable-bashcompletion']",34.189,32.231,1.861,2278824
+ix264-00012-00002,"['--disable-gpl', '--bit-depth=8', '--chroma-format=420', '--disable-bashcompletion']",37.964,36.337,1.526,1938720
+ix264-00013-00006,"['--disable-interlaced', '--bit-depth=all', '--chroma-format=422', '--enable-bashcompletion']",65.470,62.962,2.372,2845544
+ix264-00013-00015,"['--disable-asm', '--bit-depth=all', '--chroma-format=400', '--enable-bashcompletion']",33.612,31.497,2.040,2223376
+ix264-00013-00012,"['--disable-interlaced', '--bit-depth=8', '--chroma-format=422', '--enable-bashcompletion']",37.438,35.911,1.456,1914320
+ix264-00013-00014,"['--disable-asm', '--disable-thread', '--disable-win32thread', '--disable-interlaced', '--bit-depth=10', '--chroma-format=422', '--disable-bashcompletion']",17.744,16.502,1.191,1463912
+ix264-00013-00005,"['--disable-asm', '--disable-interlaced', '--bit-depth=all', '--chroma-format=all', '--enable-bashcompletion']",37.678,35.628,1.960,2442528
+ix264-00013-00020,"['--disable-interlaced', '--bit-depth=8', '--chroma-format=422', '--disable-bashcompletion']",37.488,35.896,1.515,1914320
+ix264-00013-00010,"['--disable-gpl', '--disable-thread', '--disable-win32thread', '--bit-depth=10', '--chroma-format=420', '--disable-bashcompletion']",31.921,30.516,1.326,1749400
+ix264-00013-00004,"['--disable-gpl', '--disable-interlaced', '--bit-depth=all', '--chroma-format=all', '--enable-bashcompletion']",69.634,67.083,2.391,3047312
+ix264-00013-00007,"['--disable-asm', '--disable-gpl', '--bit-depth=10', '--chroma-format=all', '--enable-bashcompletion']",21.115,19.819,1.235,1601416
+ix264-00013-00017,"['--disable-gpl', '--disable-win32thread', '--bit-depth=8', '--chroma-format=all', '--enable-bashcompletion']",40.118,38.471,1.560,2046072
+ix264-00013-00008,"['--disable-asm', '--disable-thread', '--disable-interlaced', '--bit-depth=8', '--chroma-format=all', '--disable-bashcompletion']",20.575,19.285,1.252,1657760
+ix264-00013-00009,"['--bit-depth=all', '--chroma-format=400', '--disable-bashcompletion']",65.526,63.073,2.327,2836352
+ix264-00013-00019,"['--disable-asm', '--disable-gpl', '--disable-win32thread', '--bit-depth=all', '--chroma-format=422', '--enable-bashcompletion']",34.686,32.605,2.004,2281776
+ix264-00013-00001,"['--disable-interlaced', '--bit-depth=8', '--chroma-format=444', '--disable-bashcompletion']",37.661,36.084,1.511,1913968
+ix264-00013-00011,"['--disable-gpl', '--disable-thread', '--disable-interlaced', '--bit-depth=all', '--chroma-format=444', '--disable-bashcompletion']",64.889,62.546,2.220,2838496
+ix264-00013-00016,"['--disable-asm', '--disable-gpl', '--disable-thread', '--disable-interlaced', '--bit-depth=8', '--chroma-format=420', '--disable-bashcompletion']",18.318,17.155,1.123,1554512
+ix264-00013-00018,"['--disable-asm', '--disable-gpl', '--disable-interlaced', '--bit-depth=8', '--chroma-format=422', '--enable-bashcompletion']",19.024,17.648,1.338,1564568
+ix264-00013-00003,"['--disable-asm', '--disable-gpl', '--disable-thread', '--disable-win32thread', '--bit-depth=all', '--chroma-format=444', '--enable-bashcompletion']",34.171,32.225,1.869,2278824
+ix264-00013-00002,"['--disable-gpl', '--bit-depth=8', '--chroma-format=420', '--disable-bashcompletion']",38.064,36.460,1.537,1938720
+ix264-00014-00006,"['--disable-interlaced', '--bit-depth=all', '--chroma-format=422', '--enable-bashcompletion']",65.457,62.897,2.430,2845544
+ix264-00014-00015,"['--disable-asm', '--bit-depth=all', '--chroma-format=400', '--enable-bashcompletion']",33.644,31.579,1.984,2223376
+ix264-00014-00012,"['--disable-interlaced', '--bit-depth=8', '--chroma-format=422', '--enable-bashcompletion']",37.404,35.838,1.499,1914320
+ix264-00014-00005,"['--disable-asm', '--disable-interlaced', '--bit-depth=all', '--chroma-format=all', '--enable-bashcompletion']",37.707,35.519,2.094,2442528
+ix264-00014-00020,"['--disable-interlaced', '--bit-depth=8', '--chroma-format=422', '--disable-bashcompletion']",37.461,35.908,1.485,1914320
+ix264-00014-00010,"['--disable-gpl', '--disable-thread', '--disable-win32thread', '--bit-depth=10', '--chroma-format=420', '--disable-bashcompletion']",31.856,30.481,1.301,1749400
+ix264-00014-00004,"['--disable-gpl', '--disable-interlaced', '--bit-depth=all', '--chroma-format=all', '--enable-bashcompletion']",69.432,66.818,2.460,3047312
+ix264-00014-00007,"['--disable-asm', '--disable-gpl', '--bit-depth=10', '--chroma-format=all', '--enable-bashcompletion']",21.015,19.704,1.249,1601416
+ix264-00014-00017,"['--disable-gpl', '--disable-win32thread', '--bit-depth=8', '--chroma-format=all', '--enable-bashcompletion']",40.247,38.632,1.543,2046072
+ix264-00014-00008,"['--disable-asm', '--disable-thread', '--disable-interlaced', '--bit-depth=8', '--chroma-format=all', '--disable-bashcompletion']",20.521,19.258,1.222,1657760
+ix264-00014-00009,"['--bit-depth=all', '--chroma-format=400', '--disable-bashcompletion']",65.666,63.169,2.365,2836352
+ix264-00014-00019,"['--disable-asm', '--disable-gpl', '--disable-win32thread', '--bit-depth=all', '--chroma-format=422', '--enable-bashcompletion']",34.742,32.614,2.049,2281776
+ix264-00014-00001,"['--disable-interlaced', '--bit-depth=8', '--chroma-format=444', '--disable-bashcompletion']",37.598,35.971,1.564,1913968
+ix264-00014-00011,"['--disable-gpl', '--disable-thread', '--disable-interlaced', '--bit-depth=all', '--chroma-format=444', '--disable-bashcompletion']",64.723,62.431,2.154,2838496
+ix264-00014-00016,"['--disable-asm', '--disable-gpl', '--disable-thread', '--disable-interlaced', '--bit-depth=8', '--chroma-format=420', '--disable-bashcompletion']",18.302,17.082,1.193,1554512
+ix264-00014-00013,"['--disable-asm', '--disable-interlaced', '--bit-depth=10', '--chroma-format=all', '--enable-bashcompletion']",20.399,19.048,1.292,1572712
+ix264-00014-00018,"['--disable-asm', '--disable-gpl', '--disable-interlaced', '--bit-depth=8', '--chroma-format=422', '--enable-bashcompletion']",18.971,17.669,1.266,1564568
+ix264-00014-00003,"['--disable-asm', '--disable-gpl', '--disable-thread', '--disable-win32thread', '--bit-depth=all', '--chroma-format=444', '--enable-bashcompletion']",34.174,32.294,1.808,2278824
+ix264-00014-00002,"['--disable-gpl', '--bit-depth=8', '--chroma-format=420', '--disable-bashcompletion']",37.953,36.368,1.515,1938720
+ix264-00015-00006,"['--disable-interlaced', '--bit-depth=all', '--chroma-format=422', '--enable-bashcompletion']",65.279,62.796,2.332,2845544
+ix264-00015-00012,"['--disable-interlaced', '--bit-depth=8', '--chroma-format=422', '--enable-bashcompletion']",37.307,35.734,1.485,1914320
+ix264-00015-00014,"['--disable-asm', '--disable-thread', '--disable-win32thread', '--disable-interlaced', '--bit-depth=10', '--chroma-format=422', '--disable-bashcompletion']",17.777,16.557,1.167,1463912
+ix264-00015-00005,"['--disable-asm', '--disable-interlaced', '--bit-depth=all', '--chroma-format=all', '--enable-bashcompletion']",37.704,35.565,2.020,2442528
+ix264-00015-00020,"['--disable-interlaced', '--bit-depth=8', '--chroma-format=422', '--disable-bashcompletion']",37.274,35.719,1.469,1914320
+ix264-00015-00010,"['--disable-gpl', '--disable-thread', '--disable-win32thread', '--bit-depth=10', '--chroma-format=420', '--disable-bashcompletion']",31.891,30.486,1.328,1749400
+ix264-00015-00004,"['--disable-gpl', '--disable-interlaced', '--bit-depth=all', '--chroma-format=all', '--enable-bashcompletion']",69.381,66.786,2.427,3047312
+ix264-00015-00007,"['--disable-asm', '--disable-gpl', '--bit-depth=10', '--chroma-format=all', '--enable-bashcompletion']",21.067,19.753,1.253,1601416
+ix264-00015-00017,"['--disable-gpl', '--disable-win32thread', '--bit-depth=8', '--chroma-format=all', '--enable-bashcompletion']",40.178,38.542,1.535,2046072
+ix264-00015-00008,"['--disable-asm', '--disable-thread', '--disable-interlaced', '--bit-depth=8', '--chroma-format=all', '--disable-bashcompletion']",20.453,19.189,1.202,1657760
+ix264-00015-00009,"['--bit-depth=all', '--chroma-format=400', '--disable-bashcompletion']",65.685,63.174,2.356,2836352
+ix264-00015-00019,"['--disable-asm', '--disable-gpl', '--disable-win32thread', '--bit-depth=all', '--chroma-format=422', '--enable-bashcompletion']",34.603,32.496,2.007,2281776
+ix264-00015-00001,"['--disable-interlaced', '--bit-depth=8', '--chroma-format=444', '--disable-bashcompletion']",37.577,36.032,1.459,1913968
+ix264-00015-00011,"['--disable-gpl', '--disable-thread', '--disable-interlaced', '--bit-depth=all', '--chroma-format=444', '--disable-bashcompletion']",64.936,62.587,2.199,2838496
+ix264-00015-00016,"['--disable-asm', '--disable-gpl', '--disable-thread', '--disable-interlaced', '--bit-depth=8', '--chroma-format=420', '--disable-bashcompletion']",18.287,17.044,1.181,1554512
+ix264-00015-00013,"['--disable-asm', '--disable-interlaced', '--bit-depth=10', '--chroma-format=all', '--enable-bashcompletion']",20.370,19.041,1.269,1572712
+ix264-00015-00018,"['--disable-asm', '--disable-gpl', '--disable-interlaced', '--bit-depth=8', '--chroma-format=422', '--enable-bashcompletion']",18.895,17.543,1.299,1564568
+ix264-00015-00003,"['--disable-asm', '--disable-gpl', '--disable-thread', '--disable-win32thread', '--bit-depth=all', '--chroma-format=444', '--enable-bashcompletion']",34.125,32.101,1.917,2278824
+ix264-00015-00002,"['--disable-gpl', '--bit-depth=8', '--chroma-format=420', '--disable-bashcompletion']",37.995,36.384,1.509,1938720
+ix264-00016-00006,"['--disable-interlaced', '--bit-depth=all', '--chroma-format=422', '--enable-bashcompletion']",65.293,62.783,2.364,2845544
+ix264-00016-00015,"['--disable-asm', '--bit-depth=all', '--chroma-format=400', '--enable-bashcompletion']",33.634,31.472,2.055,2223376
+ix264-00016-00012,"['--disable-interlaced', '--bit-depth=8', '--chroma-format=422', '--enable-bashcompletion']",37.340,35.808,1.444,1914320
+ix264-00016-00014,"['--disable-asm', '--disable-thread', '--disable-win32thread', '--disable-interlaced', '--bit-depth=10', '--chroma-format=422', '--disable-bashcompletion']",17.752,16.527,1.170,1463912
+ix264-00016-00005,"['--disable-asm', '--disable-interlaced', '--bit-depth=all', '--chroma-format=all', '--enable-bashcompletion']",37.586,35.441,2.031,2442528
+ix264-00016-00020,"['--disable-interlaced', '--bit-depth=8', '--chroma-format=422', '--disable-bashcompletion']",37.297,35.753,1.457,1914320
+ix264-00016-00010,"['--disable-gpl', '--disable-thread', '--disable-win32thread', '--bit-depth=10', '--chroma-format=420', '--disable-bashcompletion']",31.894,30.500,1.323,1749400
+ix264-00016-00004,"['--disable-gpl', '--disable-interlaced', '--bit-depth=all', '--chroma-format=all', '--enable-bashcompletion']",69.472,66.980,2.324,3047312
+ix264-00016-00007,"['--disable-asm', '--disable-gpl', '--bit-depth=10', '--chroma-format=all', '--enable-bashcompletion']",21.017,19.713,1.242,1601416
+ix264-00016-00017,"['--disable-gpl', '--disable-win32thread', '--bit-depth=8', '--chroma-format=all', '--enable-bashcompletion']",40.141,38.493,1.543,2046072
+ix264-00016-00008,"['--disable-asm', '--disable-thread', '--disable-interlaced', '--bit-depth=8', '--chroma-format=all', '--disable-bashcompletion']",20.426,19.130,1.232,1657760
+ix264-00016-00009,"['--bit-depth=all', '--chroma-format=400', '--disable-bashcompletion']",65.393,62.878,2.359,2836352
+ix264-00016-00019,"['--disable-asm', '--disable-gpl', '--disable-win32thread', '--bit-depth=all', '--chroma-format=422', '--enable-bashcompletion']",34.612,32.558,1.949,2281776
+ix264-00016-00001,"['--disable-interlaced', '--bit-depth=8', '--chroma-format=444', '--disable-bashcompletion']",37.565,36.006,1.470,1913968
+ix264-00016-00011,"['--disable-gpl', '--disable-thread', '--disable-interlaced', '--bit-depth=all', '--chroma-format=444', '--disable-bashcompletion']",64.818,62.467,2.196,2838496
+ix264-00016-00013,"['--disable-asm', '--disable-interlaced', '--bit-depth=10', '--chroma-format=all', '--enable-bashcompletion']",20.402,19.054,1.275,1572712
+ix264-00016-00018,"['--disable-asm', '--disable-gpl', '--disable-interlaced', '--bit-depth=8', '--chroma-format=422', '--enable-bashcompletion']",18.836,17.528,1.253,1564568
+ix264-00016-00003,"['--disable-asm', '--disable-gpl', '--disable-thread', '--disable-win32thread', '--bit-depth=all', '--chroma-format=444', '--enable-bashcompletion']",34.047,32.092,1.857,2278824
+ix264-00016-00002,"['--disable-gpl', '--bit-depth=8', '--chroma-format=420', '--disable-bashcompletion']",37.923,36.328,1.506,1938720
+ix264-00017-00006,"['--disable-interlaced', '--bit-depth=all', '--chroma-format=422', '--enable-bashcompletion']",65.376,62.850,2.361,2845544
+ix264-00017-00015,"['--disable-asm', '--bit-depth=all', '--chroma-format=400', '--enable-bashcompletion']",33.591,31.495,2.001,2223376
+ix264-00017-00012,"['--disable-interlaced', '--bit-depth=8', '--chroma-format=422', '--enable-bashcompletion']",37.435,35.873,1.470,1914320
+ix264-00017-00014,"['--disable-asm', '--disable-thread', '--disable-win32thread', '--disable-interlaced', '--bit-depth=10', '--chroma-format=422', '--disable-bashcompletion']",17.689,16.486,1.156,1463912
+ix264-00017-00005,"['--disable-asm', '--disable-interlaced', '--bit-depth=all', '--chroma-format=all', '--enable-bashcompletion']",37.693,35.502,2.082,2442528
+ix264-00017-00020,"['--disable-interlaced', '--bit-depth=8', '--chroma-format=422', '--disable-bashcompletion']",37.267,35.703,1.466,1914320
+ix264-00017-00010,"['--disable-gpl', '--disable-thread', '--disable-win32thread', '--bit-depth=10', '--chroma-format=420', '--disable-bashcompletion']",31.879,30.505,1.293,1749400
+ix264-00017-00004,"['--disable-gpl', '--disable-interlaced', '--bit-depth=all', '--chroma-format=all', '--enable-bashcompletion']",69.312,66.795,2.336,3047312
+ix264-00017-00007,"['--disable-asm', '--disable-gpl', '--bit-depth=10', '--chroma-format=all', '--enable-bashcompletion']",21.083,19.817,1.206,1601416
+ix264-00017-00008,"['--disable-asm', '--disable-thread', '--disable-interlaced', '--bit-depth=8', '--chroma-format=all', '--disable-bashcompletion']",20.479,19.186,1.233,1657760
+ix264-00017-00009,"['--bit-depth=all', '--chroma-format=400', '--disable-bashcompletion']",65.495,62.942,2.382,2836352
+ix264-00017-00019,"['--disable-asm', '--disable-gpl', '--disable-win32thread', '--bit-depth=all', '--chroma-format=422', '--enable-bashcompletion']",34.734,32.685,1.941,2281776
+ix264-00017-00001,"['--disable-interlaced', '--bit-depth=8', '--chroma-format=444', '--disable-bashcompletion']",37.636,36.060,1.478,1913968
+ix264-00017-00011,"['--disable-gpl', '--disable-thread', '--disable-interlaced', '--bit-depth=all', '--chroma-format=444', '--disable-bashcompletion']",65.040,62.602,2.280,2838496
+ix264-00017-00016,"['--disable-asm', '--disable-gpl', '--disable-thread', '--disable-interlaced', '--bit-depth=8', '--chroma-format=420', '--disable-bashcompletion']",18.296,17.061,1.183,1554512
+ix264-00017-00013,"['--disable-asm', '--disable-interlaced', '--bit-depth=10', '--chroma-format=all', '--enable-bashcompletion']",20.398,19.116,1.224,1572712
+ix264-00017-00018,"['--disable-asm', '--disable-gpl', '--disable-interlaced', '--bit-depth=8', '--chroma-format=422', '--enable-bashcompletion']",18.947,17.574,1.316,1564568
+ix264-00017-00003,"['--disable-asm', '--disable-gpl', '--disable-thread', '--disable-win32thread', '--bit-depth=all', '--chroma-format=444', '--enable-bashcompletion']",34.124,32.120,1.907,2278824
+ix264-00017-00002,"['--disable-gpl', '--bit-depth=8', '--chroma-format=420', '--disable-bashcompletion']",37.963,36.293,1.569,1938720
+ix264-00018-00006,"['--disable-interlaced', '--bit-depth=all', '--chroma-format=422', '--enable-bashcompletion']",65.344,62.842,2.344,2845544
+ix264-00018-00015,"['--disable-asm', '--bit-depth=all', '--chroma-format=400', '--enable-bashcompletion']",33.551,31.484,1.962,2223376
+ix264-00018-00012,"['--disable-interlaced', '--bit-depth=8', '--chroma-format=422', '--enable-bashcompletion']",37.392,35.760,1.547,1914320
+ix264-00018-00014,"['--disable-asm', '--disable-thread', '--disable-win32thread', '--disable-interlaced', '--bit-depth=10', '--chroma-format=422', '--disable-bashcompletion']",17.741,16.535,1.150,1463912
+ix264-00018-00005,"['--disable-asm', '--disable-interlaced', '--bit-depth=all', '--chroma-format=all', '--enable-bashcompletion']",37.567,35.408,2.045,2442528
+ix264-00018-00020,"['--disable-interlaced', '--bit-depth=8', '--chroma-format=422', '--disable-bashcompletion']",37.292,35.707,1.494,1914320
+ix264-00018-00010,"['--disable-gpl', '--disable-thread', '--disable-win32thread', '--bit-depth=10', '--chroma-format=420', '--disable-bashcompletion']",31.902,30.493,1.327,1749400
+ix264-00018-00004,"['--disable-gpl', '--disable-interlaced', '--bit-depth=all', '--chroma-format=all', '--enable-bashcompletion']",69.374,66.820,2.382,3047312
+ix264-00018-00007,"['--disable-asm', '--disable-gpl', '--bit-depth=10', '--chroma-format=all', '--enable-bashcompletion']",21.071,19.683,1.325,1601416
+ix264-00018-00017,"['--disable-gpl', '--disable-win32thread', '--bit-depth=8', '--chroma-format=all', '--enable-bashcompletion']",40.113,38.457,1.558,2046072
+ix264-00018-00008,"['--disable-asm', '--disable-thread', '--disable-interlaced', '--bit-depth=8', '--chroma-format=all', '--disable-bashcompletion']",20.478,19.226,1.190,1657760
+ix264-00018-00009,"['--bit-depth=all', '--chroma-format=400', '--disable-bashcompletion']",65.539,63.027,2.358,2836352
+ix264-00018-00019,"['--disable-asm', '--disable-gpl', '--disable-win32thread', '--bit-depth=all', '--chroma-format=422', '--enable-bashcompletion']",34.658,32.493,2.058,2281776
+ix264-00018-00001,"['--disable-interlaced', '--bit-depth=8', '--chroma-format=444', '--disable-bashcompletion']",37.563,35.963,1.509,1913968
+ix264-00018-00011,"['--disable-gpl', '--disable-thread', '--disable-interlaced', '--bit-depth=all', '--chroma-format=444', '--disable-bashcompletion']",64.829,62.495,2.173,2838496
+ix264-00018-00016,"['--disable-asm', '--disable-gpl', '--disable-thread', '--disable-interlaced', '--bit-depth=8', '--chroma-format=420', '--disable-bashcompletion']",18.287,17.012,1.217,1554512
+ix264-00018-00013,"['--disable-asm', '--disable-interlaced', '--bit-depth=10', '--chroma-format=all', '--enable-bashcompletion']",20.358,19.023,1.277,1572712
+ix264-00018-00003,"['--disable-asm', '--disable-gpl', '--disable-thread', '--disable-win32thread', '--bit-depth=all', '--chroma-format=444', '--enable-bashcompletion']",34.178,32.265,1.816,2278824
+ix264-00018-00002,"['--disable-gpl', '--bit-depth=8', '--chroma-format=420', '--disable-bashcompletion']",37.953,36.355,1.508,1938720
+ix264-00019-00006,"['--disable-interlaced', '--bit-depth=all', '--chroma-format=422', '--enable-bashcompletion']",65.402,62.895,2.351,2845544
+ix264-00019-00015,"['--disable-asm', '--bit-depth=all', '--chroma-format=400', '--enable-bashcompletion']",33.556,31.457,1.997,2223376
+ix264-00019-00012,"['--disable-interlaced', '--bit-depth=8', '--chroma-format=422', '--enable-bashcompletion']",37.411,35.797,1.527,1914320
+ix264-00019-00014,"['--disable-asm', '--disable-thread', '--disable-win32thread', '--disable-interlaced', '--bit-depth=10', '--chroma-format=422', '--disable-bashcompletion']",17.707,16.522,1.131,1463912
+ix264-00019-00005,"['--disable-asm', '--disable-interlaced', '--bit-depth=all', '--chroma-format=all', '--enable-bashcompletion']",37.582,35.425,2.041,2442528
+ix264-00019-00020,"['--disable-interlaced', '--bit-depth=8', '--chroma-format=422', '--disable-bashcompletion']",37.332,35.771,1.476,1914320
+ix264-00019-00010,"['--disable-gpl', '--disable-thread', '--disable-win32thread', '--bit-depth=10', '--chroma-format=420', '--disable-bashcompletion']",31.916,30.569,1.270,1749400
+ix264-00019-00004,"['--disable-gpl', '--disable-interlaced', '--bit-depth=all', '--chroma-format=all', '--enable-bashcompletion']",69.444,66.963,2.310,3047312
+ix264-00019-00007,"['--disable-asm', '--disable-gpl', '--bit-depth=10', '--chroma-format=all', '--enable-bashcompletion']",21.117,19.765,1.289,1601416
+ix264-00019-00017,"['--disable-gpl', '--disable-win32thread', '--bit-depth=8', '--chroma-format=all', '--enable-bashcompletion']",40.106,38.458,1.545,2046072
+ix264-00019-00008,"['--disable-asm', '--disable-thread', '--disable-interlaced', '--bit-depth=8', '--chroma-format=all', '--disable-bashcompletion']",20.493,19.218,1.209,1657760
+ix264-00019-00009,"['--bit-depth=all', '--chroma-format=400', '--disable-bashcompletion']",65.503,63.006,2.336,2836352
+ix264-00019-00001,"['--disable-interlaced', '--bit-depth=8', '--chroma-format=444', '--disable-bashcompletion']",37.566,35.941,1.536,1913968
+ix264-00019-00011,"['--disable-gpl', '--disable-thread', '--disable-interlaced', '--bit-depth=all', '--chroma-format=444', '--disable-bashcompletion']",64.810,62.453,2.187,2838496
+ix264-00019-00016,"['--disable-asm', '--disable-gpl', '--disable-thread', '--disable-interlaced', '--bit-depth=8', '--chroma-format=420', '--disable-bashcompletion']",18.312,17.087,1.160,1554512
+ix264-00019-00013,"['--disable-asm', '--disable-interlaced', '--bit-depth=10', '--chroma-format=all', '--enable-bashcompletion']",20.356,19.015,1.281,1572712
+ix264-00019-00018,"['--disable-asm', '--disable-gpl', '--disable-interlaced', '--bit-depth=8', '--chroma-format=422', '--enable-bashcompletion']",18.829,17.452,1.320,1564568
+ix264-00019-00003,"['--disable-asm', '--disable-gpl', '--disable-thread', '--disable-win32thread', '--bit-depth=all', '--chroma-format=444', '--enable-bashcompletion']",34.139,32.217,1.830,2278824
+ix264-00019-00002,"['--disable-gpl', '--bit-depth=8', '--chroma-format=420', '--disable-bashcompletion']",38.008,36.456,1.450,1938720
+ix264-00020-00006,"['--disable-interlaced', '--bit-depth=all', '--chroma-format=422', '--enable-bashcompletion']",65.297,62.799,2.329,2845544
+ix264-00020-00015,"['--disable-asm', '--bit-depth=all', '--chroma-format=400', '--enable-bashcompletion']",33.580,31.542,1.933,2223376
+ix264-00020-00012,"['--disable-interlaced', '--bit-depth=8', '--chroma-format=422', '--enable-bashcompletion']",37.415,35.834,1.482,1914320
+ix264-00020-00014,"['--disable-asm', '--disable-thread', '--disable-win32thread', '--disable-interlaced', '--bit-depth=10', '--chroma-format=422', '--disable-bashcompletion']",17.784,16.595,1.140,1463912
+ix264-00020-00005,"['--disable-asm', '--disable-interlaced', '--bit-depth=all', '--chroma-format=all', '--enable-bashcompletion']",37.622,35.497,2.018,2442528
+ix264-00020-00010,"['--disable-gpl', '--disable-thread', '--disable-win32thread', '--bit-depth=10', '--chroma-format=420', '--disable-bashcompletion']",31.885,30.478,1.335,1749400
+ix264-00020-00004,"['--disable-gpl', '--disable-interlaced', '--bit-depth=all', '--chroma-format=all', '--enable-bashcompletion']",69.440,66.891,2.366,3047312
+ix264-00020-00007,"['--disable-asm', '--disable-gpl', '--bit-depth=10', '--chroma-format=all', '--enable-bashcompletion']",21.144,19.801,1.284,1601416
+ix264-00020-00017,"['--disable-gpl', '--disable-win32thread', '--bit-depth=8', '--chroma-format=all', '--enable-bashcompletion']",40.161,38.503,1.555,2046072
+ix264-00020-00008,"['--disable-asm', '--disable-thread', '--disable-interlaced', '--bit-depth=8', '--chroma-format=all', '--disable-bashcompletion']",20.409,19.117,1.229,1657760
+ix264-00020-00009,"['--bit-depth=all', '--chroma-format=400', '--disable-bashcompletion']",65.617,63.119,2.349,2836352
+ix264-00020-00019,"['--disable-asm', '--disable-gpl', '--disable-win32thread', '--bit-depth=all', '--chroma-format=422', '--enable-bashcompletion']",34.693,32.564,2.018,2281776
+ix264-00020-00001,"['--disable-interlaced', '--bit-depth=8', '--chroma-format=444', '--disable-bashcompletion']",37.541,35.952,1.494,1913968
+ix264-00020-00011,"['--disable-gpl', '--disable-thread', '--disable-interlaced', '--bit-depth=all', '--chroma-format=444', '--disable-bashcompletion']",64.816,62.436,2.221,2838496
+ix264-00020-00016,"['--disable-asm', '--disable-gpl', '--disable-thread', '--disable-interlaced', '--bit-depth=8', '--chroma-format=420', '--disable-bashcompletion']",18.289,17.028,1.206,1554512
+ix264-00020-00013,"['--disable-asm', '--disable-interlaced', '--bit-depth=10', '--chroma-format=all', '--enable-bashcompletion']",20.399,19.078,1.261,1572712
+ix264-00020-00018,"['--disable-asm', '--disable-gpl', '--disable-interlaced', '--bit-depth=8', '--chroma-format=422', '--enable-bashcompletion']",18.915,17.578,1.278,1564568
+ix264-00020-00003,"['--disable-asm', '--disable-gpl', '--disable-thread', '--disable-win32thread', '--bit-depth=all', '--chroma-format=444', '--enable-bashcompletion']",34.106,32.201,1.808,2278824
+ix264-00020-00002,"['--disable-gpl', '--bit-depth=8', '--chroma-format=420', '--disable-bashcompletion']",38.049,36.400,1.551,1938720

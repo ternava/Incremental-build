@@ -11,7 +11,7 @@ def path_leaf(path):
 
 def spec_to_array():
     #for variant in glob.glob("/home/xternava/Documents/GitHub/Incremental-build/configurations/sample-03/*.config"):
-    for variant in glob.glob("/src/configurations/sample-04/*.config"):
+    for variant in glob.glob("/src/configurations/sample-03/*.config"):
         specialized_files.append(path_leaf(variant[:-7]))
         lineList = list()
         with open(variant) as f:
