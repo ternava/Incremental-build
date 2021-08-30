@@ -1,6 +1,0 @@
-Branch,Option,bt_real,bt_user,bt_sys,BinarySize
-curl-minimal,"['--disable-ares', '--disable-cookies', '--disable-ipv6', '--disable-manual']",45.2337,0.0007,0.0001,8233
-curl-disable-ares,--disable-ares,38.2193,0.0000,0.0009,8233
-curl-disable-cookies,--disable-cookies,43.6316,0.0000,0.0009,8233
-curl-disable-ipv6,--disable-ipv6,43.2678,0.0001,0.0009,8233
-curl-disable-manual,--disable-manual,42.5243,0.0000,0.0010,8233

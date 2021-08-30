@@ -41,8 +41,5 @@ def clean_build():
                 # stage all changes (i.e., object files) and commit
                 repo.git.add(all=True, force=True)
                 repo.index.commit('clean build curl master copy with ' + str(spec_file))
-def main():
-    clean_build()
 
-if __name__== "__main__":
-   main()
+clean_build()

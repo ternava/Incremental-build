@@ -1,9 +1,8 @@
 import os.path
 from os import path
 
-def main():
+def remove_gitignore_content():
 
-    #path = '/home/xternava/Documents/GitHub/curl-ib/'
     path = '/github/curl/'
     if os.path.exists(str(path) + ".gitignore"):
         f_ignore = open(os.path.join(path, ".gitignore"), 'w')
@@ -13,5 +12,4 @@ def main():
         with open(os.path.join(path, ".gitignore"), 'w') as fp:
             pass
 
-if __name__== "__main__":
-   main()
+remove_gitignore_content()
