@@ -45,8 +45,4 @@ def clean_build():
                 repo.git.add(all=True, force=True)
                 repo.index.commit('clean build xz master copy with ' + str(spec_file))
 
-def main():
-    clean_build()
-
-if __name__== "__main__":
-   main()
+clean_build()

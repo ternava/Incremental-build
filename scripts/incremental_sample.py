@@ -54,8 +54,4 @@ def incremental_build():
                         repo.git.add(all=True, force=True)
                         repo.index.commit('incremental build of ixz branch with ' + str(spec_file))
 
-def main(): 
-    incremental_build()
-
-if __name__== "__main__":
-   main()
+incremental_build()
