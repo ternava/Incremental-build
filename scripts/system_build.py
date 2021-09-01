@@ -44,12 +44,12 @@ def system_build_time(compile_time_opt):
     #subprocess.run(["make", "clean"])
     #subprocess.run(["make", "distclean"])
     subprocess.run(["autoreconf", "-fi"])
-    subprocess.run(["./configure", "--with-openssl"] + compile_time_opt)
+    proca = subprocess.run(["./configure", "--with-openssl"] + compile_time_opt)
 
     # Calculates the bash time
     proc = subprocess.run(["TIMEFORMAT='%4R %4U %4S' ; { time make 2> make.stderr ; } 2>> time.txt"], shell=True)
 
-    if ( proc.returncode == 0 ):
+    if ( proc.returncode == 0 & proc.returncode == 0 ):
         # Calculates the GNU time
         # subprocess.run(["/usr/bin/time", "-pao", "time.txt", "--format=%e", "make"])
 
