@@ -56,11 +56,11 @@
     
     * _`data`_ folder contains the generated data after running the scripts given in the `scripts` folder.
 
-    * _`ǹotebooks`_ contain the analysed data and generated tables and figures given in the paper, based on the generated data in `data`folder
+    * _`notebooks`_ contain the analysed data and generated tables and figures given in the paper, based on the generated data in `data`folder
 
     * _`scripts`_ contain the used scripts to run our experiments. These scripts are also run by using the `Dockerfile`.
 
-    * _`Dockerfile`_ contain the instructions to automate the build of 
+    * _`Dockerfile`_ contain the instructions to automate the build of experiments and the generated data are made available in a Jupyter notebook.
 
 
 
