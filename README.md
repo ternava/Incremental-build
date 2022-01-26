@@ -1,6 +1,6 @@
 ### Availability of artefacts:
 
-- __The five open-source software systems used in our experiments__
+* __The five open-source software systems used in our experiments__
   
   | Subject  	| Repository                                      |  Commit/Tag ID  	                                                                        | Date  	          |
   |---	      |---	                                            |---                                                                                        |---	              |
@@ -11,7 +11,7 @@
   | xterm     | https://github.com/ThomasDickey/xterm-snapshots |  [xterm-368](https://github.com/ThomasDickey/xterm-snapshots/releases/tag/xterm-368)      | June 08, 2021    	|
 
 ---
-- __Project Structure__
+* __Project Structure__
 
   In addition to the `main` branch, this project has 5 other relevant branches: 
   [inc-build-x264](https://github.com/ternava/Incremental-build/tree/inc-build-x264), 
@@ -21,38 +21,51 @@
   [inc-build-xterm](https://github.com/ternava/Incremental-build/tree/inc-build-xterm).
   Thus, all generated artefacts and obtained data are recorded in a specific branch for each subject system. 
 
- - __Branch Structure__
+ * __Branch Structure__
   
    Each branch has this following folder structure: 
   
-  ```yaml
-  inc-build-[SystemName] (branch)
-  │
-  └─── artifacts                                           
-  │   │   fm-[SystemName]-ib.png
-  └─── configurations
-  │   └─── sample-03
-  │   └─── sample-04 
-  └─── data
-  │   └─── rez_sample_03ALL
-  │   └─── rez_sample_03I
-  │   └─── rez_sample_03II
-  │   └─── rez_sample_04ALL
-  │   └─── rez_sample_04I
-  │   └─── rez_sample_04II
-  └─── notebooks
-  │   └─── rez_sample_03I
-  │       └─── figures
-  │   └─── rez_sample_04I
-  │       └─── figures
-  └─── scripts
-  │   Dockerfile 
-  │   README.md
-  ```
+    ```yaml
+    inc-build-[SystemName] (branch)
+    │
+    └─── artifacts                                           
+    │   │   fm-[SystemName]-ib.png
+    └─── configurations
+    │   └─── sample-03
+    │   └─── sample-04 
+    └─── data
+    │   └─── rez_sample_03ALL
+    │   └─── rez_sample_03I
+    │   └─── rez_sample_03II
+    │   └─── rez_sample_04ALL
+    │   └─── rez_sample_04I
+    │   └─── rez_sample_04II
+    └─── notebooks
+    │   └─── rez_sample_03I
+    │       └─── figures
+    │   └─── rez_sample_04I
+    │       └─── figures
+    └─── scripts
+    │   Dockerfile 
+    │   README.md
+    ```
   
-* _`artifacts`_ folder contains the configuration options model of the system. This model has all compile-time options of the system, including their dependencies, which options are shown by `$ ./configuration --help`. The model is build using [FeatureIDE](https://featureide.github.io/). This model and framework is further used to generate the two batches with configurations, given in the folder `configurations`.
+    * _`artifacts`_ folder contains the configuration options model of the system. This model has all compile-time options of the system, including their dependencies, that we used in our experiments. These options are shown by using `$ ./configuration --help` in a system. The model is build using [FeatureIDE](https://featureide.github.io/). This model and FeatureIDE framework is further used to generate the two batches with configurations, given in the folder `configurations`.
 
-* _`configurations`_ folder contains two subfolders, `sample-03` and `sample-04`. These subfolders contain the Batch 1 and Batch 2 with 20 configurations each. These are the configurations that we used in our experiments. 
+    * _`configurations`_ folder contains two subfolders, `sample-03` and `sample-04`. These subfolders contain the Batch 1 (B1) and Batch 2 (B2) with 20 configurations each for the system. These are the used configurations in our experiments. 
+    
+    * _`data`_ folder contains the generated data after running the scripts given in the `scripts` folder.
+
+    * _`ǹotebooks`_ contain the analysed data and generated tables and figures given in the paper, based on the generated data in `data`folder
+
+    * _`scripts`_ contain the used scripts to run our experiments. These scripts are also run by using the `Dockerfile`.
+
+    * _`Dockerfile`_ contain the instructions to automate the build of 
+
+
+
+
+
   
  - The direct access to a specific branch, batch of configurations, and Dockerfile is given in the following table
   
