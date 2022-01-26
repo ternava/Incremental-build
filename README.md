@@ -56,18 +56,24 @@
     
     * _`data`_ folder contains the generated data after running the scripts given in the `scripts` folder.
 
-    * _`notebooks`_ contain the analysed data and generated tables and figures given in the paper, based on the generated data in `data`folder
+    * _`notebooks`_ folder contains the analysed data and generated tables and figures given in the paper, based on the generated data in `data`folder
 
-    * _`scripts`_ contain the used scripts to run our experiments. These scripts are also run by using the `Dockerfile`.
+    * _`scripts`_ folder contains the used scripts to run our experiments. These scripts are also run by using the `Dockerfile`.
 
-    * _`Dockerfile`_ contain the instructions to automate the build of experiments and the generated data are made available in a Jupyter notebook.
-
-
+    * _`Dockerfile`_ folder contains the instructions to automate the build of experiments and the generated data are made available in a Jupyter notebook.
 
 
+### What these artifacts do
 
-  
- - The direct access to a specific branch, batch of configurations, and Dockerfile is given in the following table
+
+### How to obtain the artifact package
+
+### How to replicate the results presented in the paper
+
+- (for the results in the paper) First switch to the right branch, then run the Dockerfile. (what are the storage requirements?)
+
+
+
   
 
   
@@ -77,5 +83,4 @@
 - Obtained data:
 
 
-Each project is added into a new branch, in this repository.
 
