@@ -1,3 +1,9 @@
+
+  | Subject  	| Repository                                      |  Commit/Tag ID  	                                                                        | Date  	          |
+  |---	      |---	                                            |---                                                                                        |---	              |
+  | curl      | https://github.com/curl/curl                    |  [curl-7_78_0](https://github.com/curl/curl/releases/tag/curl-7_78_0) 	                  | July 21, 2021    	|
+
+
 # Running the experiments by using the Dockerfile
 
 (comment: the docker image will be added also in the Docker Hub)
