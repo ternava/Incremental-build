@@ -1,3 +1,10 @@
+
+  | Subject  	| Repository                                      |  Commit/Tag ID  	                                                                        | Date  	          |
+  |---	      |---	                                            |---                                                                                        |---	              |
+  | xterm     | https://github.com/ThomasDickey/xterm-snapshots |  [xterm-368](https://github.com/ThomasDickey/xterm-snapshots/releases/tag/xterm-368)      | June 08, 2021    	|
+
+
+
 # Running the experiments by using the Dockerfile
 
 (comment: the docker image will be added also in the Docker Hub)
