@@ -1,3 +1,8 @@
+ 
+  | Subject  	| Repository                                      |  Commit/Tag ID  	                                                                        | Date  	          |
+  |---	      |---	                                            |---                                                                                        |---	              |
+  | xz        | https://github.com/xz-mirror/xz                 |  [e7da44d](https://github.com/xz-mirror/xz/tree/e7da44d5151e21f153925781ad29334ae0786101) | February 13, 2021	|
+
 # Running the experiments by using the Dockerfile
 
 (comment: the docker image will be added also in the Docker Hub)
