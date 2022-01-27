@@ -100,7 +100,7 @@ Approximate time taken and used resoures in our used workstation were as in the 
 - **Step 4:** By being in the `inc-build-x264` branch, build an image from the _Dockerfile_ by typing `sudo docker build -t="imagex264" .` (don't forget the dot at the end, but you are free to change the `imagex264` image name).
 - **Step 5:** Depending from the analysed project, step 4 will take between 2-4 hours to be finished. We thught to provide an example with few configurations that will run quicker, but using few data in the next steps of our experiment make impossible to compare with the original results.
 - **Step 6:** Run a container from the build image by `docker run --name containerx264 -p 8888:8888 -it imagex264`. 
-- **Step 7:** To access the notebook, with all the data, open in the browser the given link after running the container. 
+- **Step 7:** To access the notebook, with all the data, open in the browser the given link after running the container. ~~For example, http://127.0.0.1:8888/?token=7e13ccabbc597bce788a9ce8114ec4b1ab5e3ad06de75082 (this one will not open on your side).~~
 - **Step 8:** Now you should have the results of 
 
 
