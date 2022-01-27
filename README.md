@@ -63,16 +63,20 @@
     * _`Dockerfile`_ folder contains the instructions to automate the build of experiments and the generated data are made available in a Jupyter notebook.
 
 
-### REPLICATION
+### REPRODUCE
 
-  To replicate our work, you need to follow these steps:
+  To reproduce our work, you need to follow these steps:
   1. Obtain the used scripts to run the experiments
   2. Run those scripts
   3. Process the obtained results
 
 
 
-### Preliminary data
+### Batches of configurations
+
+In each system we have used two batched of configurations. They are contained within the folder `configurations` under the names `sample-03`(batch 1) and `sample-04` (batch 2).
+These configurations remain unchanged in order to reproduce our study. 
+
 
 ### Prefered used hardware
 
@@ -107,7 +111,7 @@ Approximate time taken and used resoures in our used workstation were as in the 
 
 ### How to obtain the artifact package
 
-### How to replicate the results presented in the paper
+### How to reproduce the results presented in the paper
 
 - (for the results in the paper) First switch to the right branch, then run the Dockerfile. (what are the storage requirements?)
 
