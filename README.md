@@ -105,11 +105,22 @@ Approximate time taken and used resoures in our used workstation were as in the 
 - **Step 5:** Depending from the analysed project, step 4 will take between 2-4 hours to be finished. We thught to provide an example with few configurations that will run quicker, but using few data in the next steps of our experiment make impossible to compare with the original results.
 - **Step 6:** Now you should have the results.
     - **Step 6.1:** In case that you want to see the clean and incremental build configurations of _x264_, you need to run a container from the first before the last image and to enter. First, type `docker images -a`. It will show all built docker images. Take the image ID from the first before the last one, which may look like ~~`60e74b672f3f`~~, and type `docker container run -it` ~~`60e74b672f3f`~~. Then, by typing `git branch -a` it will show all clean and incremental build configurations that are saved in separate branches, just as they are described in our approach in Figure 4 in the original paper. To exit from the container type `Ctrl+Z` and then `Ctrl+D` twice.
-    - **Step 6.2:** The clean and incremental build time and executable binary sizes for each configuration are avilable within the `/src/data/` folder in files `buildtime_dc2.csv` (clean build data) and `buildtime_di1.csv` (incremental build data) files. But, you can access these data by using our provided Jupyter notebooks. Hence, you can skip this step.
+    - **Step 6.2:** The clean and incremental build time and executable binary sizes for each configuration are avilable within the `/src/data/` folder in files `buildtime_dc2.csv` (clean build data) and `buildtime_di1.csv` (incremental build data) files. If you want to copy these data from container to the host, you should be outside the container and then type `docker cp <containerId>:/file/path/within/container /host/path/target`. But, you can access these data by using our provided Jupyter notebooks. Hence, you can skip this step.
 - **Step 7:** Run a container from the build image by `docker run --name containerx264 -p 8888:8888 -it imagex264`. (Note: if you have changed the `imagex264` name in **Step 4**, then you should change it here too.)
 - **Step 8:** To access the notebook, with all the data, open in the browser the given link in the terminal after running the container. ~~For example, http://127.0.0.1:8888/?token=7e13ccabbc597bce788a9ce8114ec4b1ab5e3ad06de75082 (this one will not open on your side).~~ It will open a new tab on your web browser. 
 - **Step 9:** You will see only the *notebooks* directory structure similar to the one provided here in the **Branch Structure** and within each branch in this project.
-- **Step10:** This directory contains 5 notebooks. Click the first one and it will open a new tab. In the menubar search for the _Kernel -> Restart and run all_ and click it. It will refresh the notebook with your data from the run experiment. You need to do this for each notebook in order (the order is mandatory).
+- **Step 10:** This directory contains 5 notebooks. Click the first one and it will open a new tab. In the menubar search for the _Kernel -> Restart and run all_ and click it. It will refresh the notebook with your data from the run experiment. You need to do this for each notebook in order (the order is mandatory).
+- **Step 11:** You can compare your obtained data with those that we have provided in Table 2 in the original conference paper. These data are further processed, analysed, and showed in Figures 6 - 8 and Tables 3 - 4. 
+- **Step 12:** To stop the container, type exit in the terminal or quit the notebooks.
+
+This was just an illustrative example. But, the exact same steps should be followed to build all configurations in batch 1 or barch 2 of a given system. 
+
+- **Step 13:** In that case, check if you are in the path of cloned project, that is, within the `Incremental-build` folder (as shown in **Step 2**).
+- **Step 14:** As mentioned in **Step 3**, you can switch to a specific branch, depending with which project you want to experiment.
+- **Step 15:** In whichever 5 project branches that you are, you can decide to experiment with the Batch 1 or Batch 2 of its configurations. To switch between batches, open the file `/scripts/options.py` with an editor or type `nano -l scripts/options.py` in the terminal. Then, as explained in the comment in lines 14-16, you can switch between batches by changing the line 18. 
+- **Step 16:**  Repeat **Step 4 - Step 12**. 
+
+
 
 
 
