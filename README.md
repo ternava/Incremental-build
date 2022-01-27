@@ -74,7 +74,7 @@
 
 ### Batches of configurations
 
-In each system we have used two batched of configurations. They are contained within the folder `configurations` under the names `sample-03`(batch 1) and `sample-04` (batch 2).
+In each system we have used two batched of configurations. They are available within the folder `configurations` under the names `sample-03`(batch 1) and `sample-04` (batch 2).
 These configurations remain unchanged in order to reproduce our study. 
 
 
