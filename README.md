@@ -78,11 +78,11 @@
 
 ### Required time and resources
 
-Approximate time taken and used resoures in our used workstation were as in the following table. These resources are re
+Approximate time taken and used resoures in our used workstation were as in the following table. These resources are needed for the analysis of once batch of configuration of system.
 
   | Resources    	| x264      | sqlite      | xz        | curl      | xterm       |
   |---	          |---	      |---          |---	      |---        |---          |
-  | Time          | 4h        |  2h  	      | 2h        | 6h        |  3h         |
+  | Time          | ~4h       |  ~2h  	    | ~2h       | ~6h       |  ~3h        |
   | Space         | 3.34GB    |  4.41GB     | 2.62GB 	  | 5.65GB    |  2.47GB     |
 
 ### Prerequisites
@@ -98,9 +98,10 @@ Approximate time taken and used resoures in our used workstation were as in the 
 - **Step 2:** By being in the path of this project, enter in the cloned project by typing `cd Incremental-build`. 
 - **Step 3:** If you type `git branch`, it will show you that you are in the `main` branch. To run experiments with a specific software project, you need to switch to a specific branch (see the __Project Structure__). For instance, to run experiments with _x264_ software system you first need to switch to its branch. To do that, in the terminal you type `git checkout inc-build-x264`. In the following is shown how to run experiments with _x264_, then the same process can be applied for the rest.
 - **Step 4:** By being in the `inc-build-x264` branch, build an image from the _Dockerfile_ by typing `sudo docker build -t="imagex264" .` (don't forget the dot at the end, but you are free to change the `imagex264` image name).
-- **Step 5:** Depending from the analysed project, step 4 will take between 2-4 hours to be finished.
-- **Step 5:** Run a container from the build image by `docker run --name containerx264 -p 8888:8888 -it imagex264`.
-- **Step 6:** To access the notebook, with all the data, open in the browser the given link after running the container.
+- **Step 5:** Depending from the analysed project, step 4 will take between 2-4 hours to be finished. We thught to provide an example with few configurations that will run quicker, but using few data in the next steps of our experiment make impossible to compare with the original results.
+- **Step 6:** Run a container from the build image by `docker run --name containerx264 -p 8888:8888 -it imagex264`. 
+- **Step 7:** To access the notebook, with all the data, open in the browser the given link after running the container. 
+- **Step 8:** Now you should have the results of 
 
 
 
