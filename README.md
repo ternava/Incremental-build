@@ -91,7 +91,12 @@ These configurations remain unchanged in order to reproduce our study.
 
 ### Prefered used hardware
 
-### Required time and resources
+The underlying hardware in the used workstation may impact the obtained time measurements in our experiment.
+Our used hardware model is Dell Inc. Latitude 7410, with a memory 15.3 GiB, processor Intel® Core™ i7-10610U CPU @ 1.80GHz x 8. 
+Still, any similar architecture (we have already tried in another similar architecture) should give comparable results.
+
+
+### Required resources
 
 Approximate time taken and used resoures in our used workstation were as in the following table. These resources are needed for the analysis of once batch of configuration of system. If you run 2 batches and repeat them 2 times, then you will need 4 times more of these resources.
 
