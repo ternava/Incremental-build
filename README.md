@@ -36,6 +36,14 @@ Still, any similar architecture (we have already tried in another similar archit
 
 #### 1.3. Software dependencies
 
+In our experiments we have used:
+   - [Docker](https://docs.docker.com/get-docker/) - to run our experiments (we used version 20.10.12)
+   - [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) - to clone and easily navigate through our project (we used version 2.34.1)
+   - [Python](https://www.python.org/downloads/) with [Jupiter](https://jupyter.org/install) and [Pandas](https://pandas.pydata.org/docs/getting_started/install.html) - to process the obtained results (we used Python 3.9.9, Jupyter core 4.7.0, and Pandas 1.2.5)
+   - [Graphviz](https://pypi.org/project/graphviz/) - to visualise the graphs for the incremental build order (we used version 0.19.1)
+
+The underlying workstation was Fedora 34, 64-bit, where experiments are run and processed. 
+The chosen workstation should not directly impact the obtained results.
 
 #### 1.4. Required resources
 
