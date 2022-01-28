@@ -90,5 +90,6 @@ RUN python3 /src/scripts/makeclean_sample.py
 RUN python3 /src/scripts/incremental_sample.py
 
 # Show the obtained results from the make clean and incremental build of x264
-WORKDIR /src/notebooks
+#WORKDIR /src/notebooks
+WORKDIR /src
 CMD ["jupyter", "notebook", "--port=8888", "--no-browser", "--ip=0.0.0.0", "--allow-root"]

@@ -12,10 +12,10 @@ def path_leaf(path):
 def spec_to_array():
     
     """     Here you can chose which Batch with configurations you want to use.
-        Batch 1: set the path to "/src/configurations/sample-03/*.config"
-        Batch 2: set the path to "/src/configurations/sample-04/*.config" """
+        Batch 1: set the path in line 18 to "/src/configurations/sample-03/*.config"
+        Batch 2: set the path in line 18 to "/src/configurations/sample-04/*.config" """
         
-    for variant in glob.glob("/src/configurations/sample-04/*.config"):
+    for variant in glob.glob("/src/configurations/sample-quicktest/*.config"):
         specialized_files.append(path_leaf(variant[:-7]))
         lineList = list()
         with open(variant) as f:
