@@ -93,7 +93,7 @@ These configurations remain unchanged in order to reproduce our study.
 
 ### Required time and resources
 
-Approximate time taken and used resoures in our used workstation were as in the following table. These resources are needed for the analysis of once batch of configuration of system.
+Approximate time taken and used resoures in our used workstation were as in the following table. These resources are needed for the analysis of once batch of configuration of system. If you run 2 batches and repeat them 2 times, then you will need 4 times more of these resources.
 
   | Resources    	| x264      | sqlite      | xz        | curl      | xterm       |
   |---	          |---	      |---          |---	      |---        |---          |
