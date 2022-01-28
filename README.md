@@ -92,7 +92,7 @@ These configurations remain unchanged in order to reproduce our study.
 ### Prefered used hardware
 
 The underlying hardware in the used workstation may impact the obtained time measurements in our experiment.
-Our used hardware model is Dell Inc. Latitude 7410, with a memory 15.3 GiB, processor Intel® Core™ i7-10610U CPU @ 1.80GHz x 8. 
+Our used hardware model is _Dell Inc. Latitude 7410_, with a _memory 15.3 GiB_, _processor Intel® Core™ i7-10610U CPU @ 1.80GHz x 8_. 
 Still, any similar architecture (we have already tried in another similar architecture) should give comparable results.
 
 
