@@ -128,7 +128,8 @@ Approximate time taken and used resoures in our used workstation were as in the 
 - **Step 3:** By being in the path of this project, enter in the cloned project by typing `cd Incremental-build`. 
 - **Step 4:** If you type `git branch -a`, it will show you that you are in the `main` branch. To run experiments with a specific software project, you need to switch to a specific branch (see the __Project Structure__). For instance, to run experiments with _x264_ software system you first need to switch to its branch. To do that, in the terminal you type `git checkout inc-build-x264`. In the following is shown how to run experiments with _x264_, then the same process can be applied for the rest.
 
-## Quick running example
+#### A quick running example
+---
 
 The following steps show how to run a first quick experiment example, by only building the _first three configurations_ from the _batch 1_ in _x264_ system. The real experiments take more time, as shown in the table above (in section **Required resources**).
 
