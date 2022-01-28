@@ -10,7 +10,11 @@ def path_leaf(path):
     return tail or ntpath.basename(head)
 
 def spec_to_array():
-    #for variant in glob.glob("/home/xternava/Documents/GitHub/Incremental-build/configurations/sample-03/*.config"):
+    
+    """     Here you can chose which Batch with configurations you want to use.
+       Batch 1: set the path in line 18 to "/src/configurations/sample-03/*.config"
+       Batch 2: set the path in line 18 to "/src/configurations/sample-04/*.config" """    
+    
     for variant in glob.glob("/src/configurations/sample-04/*.config"):
         specialized_files.append(path_leaf(variant[:-7]))
         lineList = list()
