@@ -52,7 +52,7 @@ Approximate time taken and used resoures in our used workstation were as in the 
 
  ### 3. Branch structure
   
-   Each branch has this following folder structure: 
+  Each branch has this following folder structure: 
   
     ```yaml
     inc-build-[SystemName] (branch)
@@ -79,17 +79,17 @@ Approximate time taken and used resoures in our used workstation were as in the 
     │   README.md
     ```
   
-    * _`artifacts`_ folder contains the configuration options model of the system. This model has all compile-time options of the system, including their dependencies, that we used in our experiments. These options are shown by using `$ ./configuration --help` in a system. The model is build using [FeatureIDE](https://featureide.github.io/). This model and FeatureIDE framework is further used to generate the two batches with configurations, given in the folder `configurations`.
+  * _`artifacts`_ folder contains the configuration options model of the system. This model has all compile-time options of the system, including their dependencies, that we used in our experiments. These options are shown by using `$ ./configuration --help` in a system. The model is build using [FeatureIDE](https://featureide.github.io/). This model and FeatureIDE framework is further used to generate the two batches with configurations, given in the folder `configurations`.
 
-    * _`configurations`_ folder contains two subfolders, `sample-03` and `sample-04`. These subfolders contain the Batch 1 (B1) and Batch 2 (B2) with 20 configurations each for the system. These are the used configurations in our experiments. 
+  * _`configurations`_ folder contains two subfolders, `sample-03` and `sample-04`. These subfolders contain the Batch 1 (B1) and Batch 2 (B2) with 20 configurations each for the system. These are the used configurations in our experiments. 
     
-    * _`data`_ folder contains the generated data after running the scripts given in the `scripts` folder.
+  * _`data`_ folder contains the generated data after running the scripts given in the `scripts` folder.
 
-    * _`notebooks`_ folder contains the analysed data and generated tables and figures given in the paper, based on the generated data in `data`folder
+  * _`notebooks`_ folder contains the analysed data and generated tables and figures given in the paper, based on the generated data in `data`folder
 
-    * _`scripts`_ folder contains the used scripts to run our experiments. These scripts are also run by using the `Dockerfile`.
+  * _`scripts`_ folder contains the used scripts to run our experiments. These scripts are also run by using the `Dockerfile`.
 
-    * _`Dockerfile`_ folder contains the instructions to automate the build of experiments and the generated data are made available in a Jupyter notebook.
+  * _`Dockerfile`_ folder contains the instructions to automate the build of experiments and the generated data are made available in a Jupyter notebook.
 
 
 ### 4. REPRODUCE
@@ -109,7 +109,7 @@ These configurations remain unchanged in order to reproduce our study.
 To switch to a specific batch, please open the file `/scripts/options.py`
 
 
-#### 4.2. Software prerequisites
+#### 4.2. Prerequisites
 
 -  Check if you have __docker__ installed by typing `sudo docker --version` in a terminal. If not, then you need to [install it](https://docs.docker.com/get-docker/). If docker is installed, you may need to check whether the docker engine is running by typing `sudo systemctl status docker` in a terminal. If it's not running then start it by typing `sudo systemctl start docker`. 
 
@@ -124,19 +124,50 @@ The following steps show how to run a first quick example, by only building the 
 - **Step 2:** Somewhere in your directory, create a local copy of this project, e.g., by typing `git clone https://github.com/ternava/Incremental-build.git` in a terminal. 
 - **Step 3:** By being in the path of this project, enter in the cloned project by typing `cd Incremental-build`. 
 - **Step 4:** If you type `git branch -a`, it will show you that you are in the `main` branch. To run experiments with a specific software project, you need to switch to a specific branch (see the __Project Structure__). For instance, to run experiments with _x264_ software system you first need to switch to its branch. To do that, in the terminal you type `git checkout inc-build-x264`. In the following is shown how to run experiments with _x264_, then the same process can be applied for the rest.
-- 
+
   <details>
-    <summary><u>See a</u> <b>screenshoot</b> (<i>click to expand</i>)</summary>
+    <summary><u>See a</u> <b>screenshot</b> (<i>click to expand</i>)</summary>
     <!-- have to be followed by an empty line! -->
     
-    ![Steps 1-4](/main/screenshots/scrshoot01.png?raw=true)
+    ![Steps 1-4](screenshots/scrnshot01.png?raw=true)
 
   </details>
 
 
-- **Step 5:** By being in the `inc-build-x264` branch, build an image from the _Dockerfile_ by typing `sudo docker build -t="imagex264" .` (don't forget the dot at the end, but you are free to change the `imagex264` image name). This step will take up to 20 minutes to be finished. 
-- **Step 6:** Now you should have the results. This step is optional. In case that you want to see the clean and incremental build configurations of _x264_, you need to run a container from the first before the last image and to enter. First, type `docker images -a`. It will show all built docker images. Take the image ID from the first before the last one, which may look like ~~`60e74b672f3f`~~, and type `docker container run -it` ~~`60e74b672f3f`~~. Then, by typing `cd /github/x264/`and then `git branch -a` it will show all clean and incremental build configurations that are saved in separate branches, just as they are described in our approach in Figure 4 in the original paper. Such branches contain the raw data of our experiments, namely, the Build Time, Binary Size, and Symbols, that we used in our experiments. You can do any detailed observations there. To exit from the container type `Ctrl+Z` and then `Ctrl+D` twice.
+- **Step 5:** By being in the `inc-build-x264` branch, build an image from the _Dockerfile_ by typing `sudo docker build -t="imagex264" .` (don't forget the dot at the end, but you are free to change the `imagex264` image name). This step will take up to 10 minutes to be finished. 
+
+  <details>
+    <summary><u>See a</u> <b>screenshot</b> (<i>click to expand</i>)</summary>
+    <!-- have to be followed by an empty line! -->
+    
+    ![Step 5](screenshots/scrnshot02.png?raw=true)
+
+  </details>
+  
+- **Step 6:** Now you should have the results. 
+  
+  These following details are optional. In case that you want to see the clean and incremental build configurations of _x264_, you need to run a container from the first before 
+  the last image and to enter. First, type `docker images -a`. It will show all built docker images. Take the image ID from the first before the last one, which may look like 
+  ~~`60e74b672f3f`~~, and type `docker container run -it` ~~`60e74b672f3f`~~. Then, by typing `cd /github/x264/`and then `git branch -a` it will show all clean and incremental 
+  build configurations that are saved in separate branches, just as they are described in our approach in Figure 4 in the original paper. Such branches contain the raw data of 
+  our experiments, namely, the Build Time, Binary Size, and Symbols, that we used in our experiments. You can do any detailed observations there. To exit from the container type 
+  `Ctrl+Z` and then `Ctrl+D` twice.
+  
+   <details>
+    <summary><u>See a</u> <b>screenshot</b> (<i>click to expand</i>)</summary>
+    <!-- have to be followed by an empty line! -->
+    
+    ![Step 6](screenshots/scrnshot03.png?raw=true)
+  
+    ![Step 6](screenshots/scrnshot04.png?raw=true)
+  
+   - Branches   `x264-00001`,  `x264-00002`, and `x264-00003` are the clean build configurations.
+   - Branches  `ix264-00001-00002`, `ix264-00001-00003`, `ix264-00002-00001`, `ix264-00002-00003`, `ix264-00003-00001`, and `ix264-00003-00002` are the incremental build configurations. For example, `ix264-00003-00001` is the incremental build configuration of `00001.config` over the clean buld configuration of `00003.config`.
+
+   </details>
+  
     <!-- **Step 6.2:** The clean and incremental build time and executable binary sizes for each configuration are avilable within the `/src/data/` folder in files `buildtime_dc2.csv` (clean build data) and `buildtime_di1.csv` (incremental build data) files. If you want to copy these data from container to the host, you should be outside the container and then type `docker cp <containerId>:/file/path/within/container /host/path/target`. But, you can access these data by using our provided Jupyter notebooks. Hence, you can skip this step. -->
+    
 - **Step 7:** Run a container from the build image by `docker run --name containerx264 -p 8888:8888 -it imagex264`. (Note: if you have changed the `imagex264` name in **Step 4**, then you should change it here too.)
 - **Step 8:** To access the notebook, with all the data, open in the browser the given link in the terminal after running the container. ~~For example, http://127.0.0.1:8888/?token=7e13ccabbc597bce788a9ce8114ec4b1ab5e3ad06de75082 (this one will not open on your side).~~ It will open a new tab on your web browser. 
 - **Step 9:** You will see only the *notebooks* directory structure similar to the one provided here in the **Branch Structure** and within each branch in this project.
