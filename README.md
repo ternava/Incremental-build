@@ -50,11 +50,12 @@ Approximate time taken and used resoures in our used workstation were as in the 
 ### 2. Project structure
 
   - In addition to the `main` branch, this project has 5 other relevant branches: 
-    [inc-build-x264](https://github.com/ternava/Incremental-build/tree/inc-build-x264), 
-    [inc-build-sqlite](https://github.com/ternava/Incremental-build/tree/inc-build-sqlite),
-    [inc-build-xz](https://github.com/ternava/Incremental-build/tree/inc-build-xz),
-    [inc-build-curl](https://github.com/ternava/Incremental-build/tree/inc-build-curl), and
-    [inc-build-xterm](https://github.com/ternava/Incremental-build/tree/inc-build-xterm).
+    - [inc-build-x264](https://github.com/ternava/Incremental-build/tree/inc-build-x264)
+    - [inc-build-sqlite](https://github.com/ternava/Incremental-build/tree/inc-build-sqlite)
+    - [inc-build-xz](https://github.com/ternava/Incremental-build/tree/inc-build-xz)
+    - [inc-build-curl](https://github.com/ternava/Incremental-build/tree/inc-build-curl)
+    - [inc-build-xterm](https://github.com/ternava/Incremental-build/tree/inc-build-xterm)
+    
     Thus, all generated artefacts and obtained data are recorded in a specific branch for each subject system. 
   
   
@@ -95,7 +96,7 @@ Approximate time taken and used resoures in our used workstation were as in the 
   
   * _`artifacts`_ folder contains the configuration options model of the system. This model has all compile-time options of the system, including their dependencies, that we used in our experiments. These options are shown by using `$ ./configuration --help` in a system. The model is build using [FeatureIDE](https://featureide.github.io/). This model and FeatureIDE framework is further used to generate the two batches with configurations, given in the folder `configurations`.
 
-  * _`configurations`_ folder contains two subfolders, `sample-03` and `sample-04`. These subfolders contain the Batch 1 (B1) and Batch 2 (B2) with 20 configurations each for the system. These are the used configurations in our experiments. 
+  * _`configurations`_ folder contains two subfolders, `sample-03` and `sample-04`. These subfolders contain the **Batch 1** and **Batch 2** with 20 configurations each for the system. These are the used configurations in our experiments. 
     
   * _`data`_ folder contains the generated data after running the scripts given in the `scripts` folder.
 
