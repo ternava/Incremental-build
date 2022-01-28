@@ -89,7 +89,7 @@ In each system we have used two batched of configurations. They are available wi
 These configurations remain unchanged in order to reproduce our study. 
 
 
-### Prefered used hardware
+### Hardware dependencies
 
 The underlying hardware in the used workstation may impact the obtained time measurements in our experiment.
 Our used hardware model is _Dell Inc. Latitude 7410_, with a _memory 15.3 GiB_, _processor Intel® Core™ i7-10610U CPU @ 1.80GHz x 8_. 
@@ -105,7 +105,7 @@ Approximate time taken and used resoures in our used workstation were as in the 
   | Time          | ~4h       |  ~2h  	    | ~2h       | ~6h       |  ~3h        |
   | Space         | 3.34GB    |  4.41GB     | 2.62GB 	  | 5.65GB    |  2.47GB     |
 
-### Prerequisites
+### Software prerequisites
 
 -  Check if you have __docker__ installed by typing `sudo docker --version` in a terminal. If not, then you need to [install it](https://docs.docker.com/get-docker/).
 -  If docker is installed, you may need to check whether the docker engine is running by typing `sudo systemctl status docker` in a terminal. If it's not running then start it by typing `sudo systemctl start docker`. 
