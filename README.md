@@ -260,7 +260,7 @@ The exact same steps should be followed to build all 20 configurations in batch 
 - **Step C:** In whatever 5 project branches you are, you need to decide to experiment with the Batch 1 or Batch 2 of its configurations. To switch between batches, open the file `/scripts/options.py` with an editor or type `nano -l scripts/options.py` in the terminal. Then, as explained in the comment in lines 14-16, you can make the necessary modification in line 18. Save it and exit with `Ctrl+D`.
 - **Step D:**  Repeat **Step 5 - Step 12**. 
 
-- Repeat **Step A - Step C** for each Batch with configurations within a given subject system and for each system.
+- Repeat **Steps A - Step C** for each Batch with configurations within a given subject system and for each system.
 
 
   **ASIDE NOTE:** As explained in [Required resources](https://github.com/ternava/Incremental-build#14-required-resources), the required disk space is quite considerable. 
@@ -272,8 +272,9 @@ The exact same steps should be followed to build all 20 configurations in batch 
 
 ### 5. How to REPLICATE the results presented in the paper?
 
-In case that a replication of experiments is aimed, then several directions are possible
+In case the replication of experiments is aimed, then several directions are possible. For instance,
 
-  - You may choose to experiment with another new subject system. Then, first make sure that it has compile-time configuration options. Prepare the configurations that you want to test, in the same format as those in the folder `configurations`. Then, create a similar branch and copy-paste the structure of other branches in this project. Adapt it, as for other project, including the Dockerfile.
-  - Another alternative for replication is to experiment with a larger number of configurations in our 5 chosen subject systems. In that case, you need just to provide a new set with configurations for them and to add in the `configurations` folder of that particular project.
+  - You may choose to experiment with other new subject systems. Then, first make sure that it has compile-time configuration options. Prepare the configurations that you want to test, in the same format as those given in the folder `configurations`. Next, create a similar branch, and copy-paste the structure of another existing branche in this project. Adapt it, as we did for current projects, including the Dockerfile.
+  
+  - Another alternative for replication is to experiment with a larger or different number of configurations in our 5 chosen subject systems. In that case, you need just to provide a new set with configurations for them and to add it in the `configurations` folder of that particular project. Then, repeat **Steps A - Step C**.
 
