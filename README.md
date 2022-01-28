@@ -2,19 +2,19 @@
 ### Table of Content
 
 1. [Artefact description](https://github.com/ternava/Incremental-build/tree/main#artefact-description)
-    * 1.1. [How is delivered]()
-    * 1.2. [Hardware dependencies]()
-    * 1.3. [Software dependencies]()
-    * 1.4. [Required resources]()
+    * 1.1. [How is delivered](https://github.com/ternava/Incremental-build#11-how-is-delivered)
+    * 1.2. [Hardware dependencies](https://github.com/ternava/Incremental-build#12-hardware-dependencies)
+    * 1.3. [Software dependencies](https://github.com/ternava/Incremental-build#13-software-dependencies)
+    * 1.4. [Required resources](https://github.com/ternava/Incremental-build#14-required-resources)
    
-2. [Project structure]()
-3. [Branch structure]()
-4. [REPRODUCE](https://github.com/ternava/Incremental-build/tree/main#reproduce)
-    * 4.1. [Batches of configurations]()
-    * 4.2. [Prerequisites]()
-    * 4.3. [A QUICK running example]()
-    * 4.4. [A COMPLETE reproduction]()
-5. [How to REPLICATE the experiments?]()
+2. [Project structure](https://github.com/ternava/Incremental-build#2-project-structure)
+3. [Branch structure](https://github.com/ternava/Incremental-build#3-branch-structure)
+4. [REPRODUCE](https://github.com/ternava/Incremental-build#4-reproduce)
+    * 4.1. [Batches of configurations](https://github.com/ternava/Incremental-build#41-batches-of-configurations)
+    * 4.2. [Prerequisites](https://github.com/ternava/Incremental-build#42-prerequisites)
+    * 4.3. [A QUICK running example](https://github.com/ternava/Incremental-build#43-a-quick-running-example)
+    * 4.4. [A COMPLETE reproduction](https://github.com/ternava/Incremental-build#43-a-complete-reproduction)
+5. [How to REPLICATE the experiments?](https://github.com/ternava/Incremental-build#5-how-to-replicate-the-experiments)
  
 
 
