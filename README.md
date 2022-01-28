@@ -270,7 +270,7 @@ The exact same steps should be followed to build all 20 configurations in batch 
   - Delete all images: `docker rmi -f $(docker images -a -q)`
 
 
-### 5. How to REPLICATE the results presented in the paper?
+### 5. How to REPLICATE the experiments presented in the paper?
 
 In case the replication of experiments is aimed, then several directions are possible. For instance,
 
