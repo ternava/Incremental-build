@@ -1,7 +1,7 @@
 ---
 ### Table of Content
 
-1. [Artifact description](https://github.com/ternava/Incremental-build/tree/main#artifact-description)
+1. [Artifact description](https://github.com/ternava/Incremental-build/tree/main#1-artifact-description)
     * 1.1. [How is delivered](https://github.com/ternava/Incremental-build#11-how-is-delivered)
     * 1.2. [Hardware dependencies](https://github.com/ternava/Incremental-build#12-hardware-dependencies)
     * 1.3. [Software dependencies](https://github.com/ternava/Incremental-build#13-software-dependencies)
