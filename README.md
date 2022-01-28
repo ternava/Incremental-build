@@ -54,7 +54,7 @@ Approximate time taken and used resoures in our used workstation were as in the 
   
   Each branch has this following folder structure: 
   
-    ```yaml
+  ```yaml
     inc-build-[SystemName] (branch)
     │
     └─── artifacts                                           
@@ -77,7 +77,7 @@ Approximate time taken and used resoures in our used workstation were as in the 
     └─── scripts
     │   Dockerfile 
     │   README.md
-    ```
+  ```
   
   * _`artifacts`_ folder contains the configuration options model of the system. This model has all compile-time options of the system, including their dependencies, that we used in our experiments. These options are shown by using `$ ./configuration --help` in a system. The model is build using [FeatureIDE](https://featureide.github.io/). This model and FeatureIDE framework is further used to generate the two batches with configurations, given in the folder `configurations`.
 
