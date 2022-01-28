@@ -94,12 +94,6 @@ Approximate time taken and used resoures in our used workstation were as in the 
 
 ### 4. REPRODUCE
 
-  To reproduce our work, you need to follow these steps:
-  1. Obtain the used scripts to run the experiments
-  2. Run those scripts
-  3. Process the obtained results
-
-
 
 #### 4.1. Batches of configurations
 
@@ -277,16 +271,10 @@ The exact same steps should be followed to build all 20 configurations in batch 
 
 
 
-### How to reproduce the results presented in the paper
+### How to REPLICATE the results presented in the paper?
 
-- (for the results in the paper) First switch to the right branch, then run the Dockerfile. (what are the storage requirements?)
+- In case that a replication of experiments is aimed, then several directions are possible
 
-
-
-  
-
-  
-In order to replicate our study, the condiguration set within a system can be changed or the subject systems can be changed. 
-
-
+  1. You may choose to experiment with another new subject system. Then, first make sure that it has compile-time configuration options. Prepare the configurations that you want to test, in the same format as those in the folder `configurations`. Then, create a similar branch and copy-paste the structure of other branches in this project. Adapt it, as for other project, including the Dockerfile.
+  2. Another alternative for replication is to experiment with a larger number of configurations in our 5 chosen subject systems. In that case, you need just to provide a new set with configurations for them and to add in the `configurations` folder of that particular project.
 
