@@ -169,11 +169,85 @@ The following steps show how to run a first quick example, by only building the 
     <!-- **Step 6.2:** The clean and incremental build time and executable binary sizes for each configuration are avilable within the `/src/data/` folder in files `buildtime_dc2.csv` (clean build data) and `buildtime_di1.csv` (incremental build data) files. If you want to copy these data from container to the host, you should be outside the container and then type `docker cp <containerId>:/file/path/within/container /host/path/target`. But, you can access these data by using our provided Jupyter notebooks. Hence, you can skip this step. -->
     
 - **Step 7:** Run a container from the build image by `docker run --name containerx264 -p 8888:8888 -it imagex264`. (Note: if you have changed the `imagex264` name in **Step 4**, then you should change it here too.)
+
+  <details>
+    <summary><u>See a</u> <b>screenshot</b> (<i>click to expand</i>)</summary>
+    <!-- have to be followed by an empty line! -->
+    
+    ![Step 7](screenshots/scrnshot05.png?raw=true)
+
+  </details>
+  
 - **Step 8:** To access the notebook, with all the data, open in the browser the given link in the terminal after running the container. ~~For example, http://127.0.0.1:8888/?token=7e13ccabbc597bce788a9ce8114ec4b1ab5e3ad06de75082 (this one will not open on your side).~~ It will open a new tab on your web browser. 
-- **Step 9:** You will see only the *notebooks* directory structure similar to the one provided here in the **Branch Structure** and within each branch in this project.
-- **Step 10:** This directory contains 5 notebooks. Click the first one and it will open a new tab. In the menubar search for the _Kernel -> Restart and run all_ and click it. It will refresh the notebook with your data from the run experiment. You need to do this for each notebook in order (the order is mandatory).
-- **Step 11:** You can compare your obtained data with those that we have provided in Table 2 in the original conference paper. These data are further processed, analysed, and showed in Figures 6 - 8 and Tables 3 - 4. 
-- **Step 12:** To stop the container, type exit in the terminal or quit the notebooks.
+
+  <details>
+    <summary><u>See a</u> <b>screenshot</b> (<i>click to expand</i>)</summary>
+    <!-- have to be followed by an empty line! -->
+    
+    ![Step 8](screenshots/scrnshot06.png?raw=true)
+
+  </details>
+  
+- **Step 9:** You will see a directory structure similar to the one provided here in the [Branch Structure](https://github.com/ternava/Incremental-build#3-branch-structure) and within each branch in this project. The results from the Steps 5 and 6 are within the folder `data` in the last two `csv`files. The other folders within this `data` folder contain our original data, which you can use to compare your results. 
+  
+  <details>
+    <summary><u>See a</u> <b>screenshot</b> (<i>click to expand</i>)</summary>
+    <!-- have to be followed by an empty line! -->
+    
+    ![Step 9](screenshots/scrnshot07.png?raw=true)
+
+  </details>
+
+- **Step 10:** These data are further processed in the folder `notebooks`.  This directory contains 3 other subfolders with 5 notebooks each, which are numbered 01-05 because they should be run in order. Actually files that being with 02 and 03 are the most important one. Open the `rez_sample_03_quicktest` folder and click the `02-CleanBuild.ipynb` file. It will open a new tab with the data from the clean build. In the menubar search for the `Kernel -> Restart and run all` and click it. It will refresh the notebook with your data from the run experiment. You need to do this for each notebook in order (the order is mandatory).
+
+   <details>
+      <summary><u>See a</u> <b>screenshot</b> (<i>click to expand</i>)</summary>
+      <!-- have to be followed by an empty line! -->
+
+      ![Step 10](screenshots/scrnshot08.png?raw=true)
+
+    </details>
+
+   <details>
+      <summary><u>See a</u> <b>screenshot</b> (<i>click to expand</i>)</summary>
+      <!-- have to be followed by an empty line! -->
+
+      ![Step 10](screenshots/scrnshot09.png?raw=true)
+
+    </details>
+
+   <details>
+      <summary><u>See a</u> <b>screenshot</b> (<i>click to expand</i>)</summary>
+      <!-- have to be followed by an empty line! -->
+
+      ![Step 10](screenshots/scrnshot10.png?raw=true)
+
+    </details>
+    
+
+- **Step 11:** You can compare your obtained data with those that we have provided in Table 2 in the original conference paper. These data are further processed, analysed, and showed in Figures 6 - 8 and Tables 3 - 4. For example, compare the Build Time and Binary Size of `x264-00003` with the values in the Table in column `c3` and rows 1 and 4, respectively. The build time is approximately the same whereas the binary size is identical. 
+
+   <details>
+      <summary><u>See a</u> <b>screenshot</b> (<i>click to expand</i>)</summary>
+      <!-- have to be followed by an empty line! -->
+
+      ![Step 11](screenshots/scrnshot11.png?raw=true)
+  
+      This is Table 2 in the original paper
+
+    </details>
+    
+     <details>
+      <summary><u>See a</u> <b>screenshot</b> (<i>click to expand</i>)</summary>
+      <!-- have to be followed by an empty line! -->
+
+      ![Step 11](screenshots/scrnshot12.png?raw=true)
+  
+      These are the obtained results according to a recent run.
+
+    </details>
+
+- **Step 12:** To stop the container, type `Ctrl+C` twice in the terminal or quit the notebooks.
 
 This was just an illustrative example. But, the exact same steps should be followed to build all configurations in batch 1 or barch 2 of a given system. 
 
