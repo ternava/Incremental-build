@@ -1,6 +1,9 @@
 ---
 ### Table of Content
 
+1. [Artefact description](https://github.com/ternava/Incremental-build/tree/main#artefact-description)
+2. [Reproduction](https://github.com/ternava/Incremental-build/tree/main#reproduce)
+
 
 ---
 
