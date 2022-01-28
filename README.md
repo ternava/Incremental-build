@@ -200,52 +200,52 @@ The following steps show how to run a first quick example, by only building the 
 
 - **Step 10:** These data are further processed in the folder `notebooks`.  This directory contains 3 other subfolders with 5 notebooks each, which are numbered 01-05 because they should be run in order. Actually files that being with 02 and 03 are the most important one. Open the `rez_sample_03_quicktest` folder and click the `02-CleanBuild.ipynb` file. It will open a new tab with the data from the clean build. In the menubar search for the `Kernel -> Restart and run all` and click it. It will refresh the notebook with your data from the run experiment. You need to do this for each notebook in order (the order is mandatory).
 
-   <details>
-      <summary><u>See a</u> <b>screenshot</b> (<i>click to expand</i>)</summary>
-      <!-- have to be followed by an empty line! -->
+  <details>
+    <summary><u>See a</u> <b>screenshot</b> (<i>click to expand</i>)</summary>
+    <!-- have to be followed by an empty line! -->
 
-      ![Step 10](screenshots/scrnshot08.png?raw=true)
+    ![Step 10](screenshots/scrnshot08.png?raw=true)
 
-    </details>
+  </details>
 
-   <details>
-      <summary><u>See a</u> <b>screenshot</b> (<i>click to expand</i>)</summary>
-      <!-- have to be followed by an empty line! -->
+  <details>
+    <summary><u>See a</u> <b>screenshot</b> (<i>click to expand</i>)</summary>
+    <!-- have to be followed by an empty line! -->
 
-      ![Step 10](screenshots/scrnshot09.png?raw=true)
+    ![Step 10](screenshots/scrnshot09.png?raw=true)
 
-    </details>
+  </details>
 
-   <details>
-      <summary><u>See a</u> <b>screenshot</b> (<i>click to expand</i>)</summary>
-      <!-- have to be followed by an empty line! -->
+  <details>
+    <summary><u>See a</u> <b>screenshot</b> (<i>click to expand</i>)</summary>
+    <!-- have to be followed by an empty line! -->
 
-      ![Step 10](screenshots/scrnshot10.png?raw=true)
+    ![Step 10](screenshots/scrnshot10.png?raw=true)
 
-    </details>
+  </details>
     
 
 - **Step 11:** You can compare your obtained data with those that we have provided in Table 2 in the original conference paper. These data are further processed, analysed, and showed in Figures 6 - 8 and Tables 3 - 4. For example, compare the Build Time and Binary Size of `x264-00003` with the values in the Table in column `c3` and rows 1 and 4, respectively. The build time is approximately the same whereas the binary size is identical. 
 
-   <details>
-      <summary><u>See a</u> <b>screenshot</b> (<i>click to expand</i>)</summary>
-      <!-- have to be followed by an empty line! -->
+  <details>
+    <summary><u>See a</u> <b>screenshot</b> (<i>click to expand</i>)</summary>
+    <!-- have to be followed by an empty line! -->
 
-      ![Step 11](screenshots/scrnshot11.png?raw=true)
+    ![Step 11](screenshots/scrnshot11.png?raw=true)
   
-      This is Table 2 in the original paper
+    This is Table 2 in the original paper
 
-    </details>
+  </details>
     
-     <details>
-      <summary><u>See a</u> <b>screenshot</b> (<i>click to expand</i>)</summary>
-      <!-- have to be followed by an empty line! -->
+  <details>
+    <summary><u>See a</u> <b>screenshot</b> (<i>click to expand</i>)</summary>
+    <!-- have to be followed by an empty line! -->
 
-      ![Step 11](screenshots/scrnshot12.png?raw=true)
+    ![Step 11](screenshots/scrnshot12.png?raw=true)
   
-      These are the obtained results according to a recent run.
+    These are the obtained results according to a recent run.
 
-    </details>
+  </details>
 
 - **Step 12:** To stop the container, type `Ctrl+C` twice in the terminal or quit the notebooks.
 
