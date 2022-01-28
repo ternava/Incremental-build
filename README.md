@@ -70,9 +70,9 @@ Approximate time taken and used resoures in our used workstation were as in the 
     │   └─── rez_sample_04I
     │   └─── rez_sample_04II
     └─── notebooks
-    │   └─── rez_sample_03I
+    │   └─── rez_sample_03ALL
     │       └─── figures
-    │   └─── rez_sample_04I
+    │   └─── rez_sample_04ALL
     │       └─── figures
     └─── scripts
     │   Dockerfile 
@@ -109,28 +109,34 @@ These configurations remain unchanged in order to reproduce our study.
 To switch to a specific batch, please open the file `/scripts/options.py`
 
 
-
-
 #### 4.2. Software prerequisites
 
--  Check if you have __docker__ installed by typing `sudo docker --version` in a terminal. If not, then you need to [install it](https://docs.docker.com/get-docker/).
--  If docker is installed, you may need to check whether the docker engine is running by typing `sudo systemctl status docker` in a terminal. If it's not running then start it by typing `sudo systemctl start docker`. 
+-  Check if you have __docker__ installed by typing `sudo docker --version` in a terminal. If not, then you need to [install it](https://docs.docker.com/get-docker/). If docker is installed, you may need to check whether the docker engine is running by typing `sudo systemctl status docker` in a terminal. If it's not running then start it by typing `sudo systemctl start docker`. 
 
 - Check if you have __git__ installed by typing `git --version` in a terminal. If not, then (optionally) you need to [install it](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git).
 
 #### 4.3. A QUICK running example
 
 
-The following steps show how to run a first quick example, by only building the _first three configurations_ from the _batch 1_ in the _x264_ system. The real experiments take more time, as shown in the table above (in section **Required resources**), but the **same exact steps** are used to run them.
+The following steps show how to run a first quick example, by only building the _first three configurations_ from the _batch 1_ in the _x264_ system. The real experiments take more time, as shown in the [table above](https://github.com/ternava/Incremental-build/tree/main#14-required-resources), but the **same exact steps** are used to run them.
 
 - **Step 1:** Open e terminal (you can use the terminal within an IDE, e.g., within Visual Studio Code). 
 - **Step 2:** Somewhere in your directory, create a local copy of this project, e.g., by typing `git clone https://github.com/ternava/Incremental-build.git` in a terminal. 
 - **Step 3:** By being in the path of this project, enter in the cloned project by typing `cd Incremental-build`. 
 - **Step 4:** If you type `git branch -a`, it will show you that you are in the `main` branch. To run experiments with a specific software project, you need to switch to a specific branch (see the __Project Structure__). For instance, to run experiments with _x264_ software system you first need to switch to its branch. To do that, in the terminal you type `git checkout inc-build-x264`. In the following is shown how to run experiments with _x264_, then the same process can be applied for the rest.
+- 
+  <details>
+    <summary><u>See a</u> <b>screenshoot</b> (<i>click to expand</i>)</summary>
+    <!-- have to be followed by an empty line! -->
+    
+    ![Steps 1-4](/main/screenshots/scrshoot01.png?raw=true)
+
+  </details>
+
+
 - **Step 5:** By being in the `inc-build-x264` branch, build an image from the _Dockerfile_ by typing `sudo docker build -t="imagex264" .` (don't forget the dot at the end, but you are free to change the `imagex264` image name). This step will take up to 20 minutes to be finished. 
-- **Step 6:** Now you should have the results. The following 2 sub-steps are optional.
-    - **Step 6.1:** In case that you want to see the clean and incremental build configurations of _x264_, you need to run a container from the first before the last image and to enter. First, type `docker images -a`. It will show all built docker images. Take the image ID from the first before the last one, which may look like ~~`60e74b672f3f`~~, and type `docker container run -it` ~~`60e74b672f3f`~~. Then, by typing `cd /github/x264/`and then `git branch -a` it will show all clean and incremental build configurations that are saved in separate branches, just as they are described in our approach in Figure 4 in the original paper. Such branches contain the raw data of our experiments, namely, the Build Time, Binary Size, and Symbols, that we used in our experiments. You can do any detailed observations there. To exit from the container type `Ctrl+Z` and then `Ctrl+D` twice.
-    - **Step 6.2:** The clean and incremental build time and executable binary sizes for each configuration are avilable within the `/src/data/` folder in files `buildtime_dc2.csv` (clean build data) and `buildtime_di1.csv` (incremental build data) files. If you want to copy these data from container to the host, you should be outside the container and then type `docker cp <containerId>:/file/path/within/container /host/path/target`. But, you can access these data by using our provided Jupyter notebooks. Hence, you can skip this step.
+- **Step 6:** Now you should have the results. This step is optional. In case that you want to see the clean and incremental build configurations of _x264_, you need to run a container from the first before the last image and to enter. First, type `docker images -a`. It will show all built docker images. Take the image ID from the first before the last one, which may look like ~~`60e74b672f3f`~~, and type `docker container run -it` ~~`60e74b672f3f`~~. Then, by typing `cd /github/x264/`and then `git branch -a` it will show all clean and incremental build configurations that are saved in separate branches, just as they are described in our approach in Figure 4 in the original paper. Such branches contain the raw data of our experiments, namely, the Build Time, Binary Size, and Symbols, that we used in our experiments. You can do any detailed observations there. To exit from the container type `Ctrl+Z` and then `Ctrl+D` twice.
+    <!-- **Step 6.2:** The clean and incremental build time and executable binary sizes for each configuration are avilable within the `/src/data/` folder in files `buildtime_dc2.csv` (clean build data) and `buildtime_di1.csv` (incremental build data) files. If you want to copy these data from container to the host, you should be outside the container and then type `docker cp <containerId>:/file/path/within/container /host/path/target`. But, you can access these data by using our provided Jupyter notebooks. Hence, you can skip this step. -->
 - **Step 7:** Run a container from the build image by `docker run --name containerx264 -p 8888:8888 -it imagex264`. (Note: if you have changed the `imagex264` name in **Step 4**, then you should change it here too.)
 - **Step 8:** To access the notebook, with all the data, open in the browser the given link in the terminal after running the container. ~~For example, http://127.0.0.1:8888/?token=7e13ccabbc597bce788a9ce8114ec4b1ab5e3ad06de75082 (this one will not open on your side).~~ It will open a new tab on your web browser. 
 - **Step 9:** You will see only the *notebooks* directory structure similar to the one provided here in the **Branch Structure** and within each branch in this project.
