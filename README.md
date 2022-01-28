@@ -11,6 +11,17 @@
   | xterm     | https://github.com/ThomasDickey/xterm-snapshots |  [xterm-368](https://github.com/ThomasDickey/xterm-snapshots/releases/tag/xterm-368)      | June 08, 2021    	|
 
 ---
+
+### Artefact description
+
+* __How is delivered__
+
+  Our used data, scripts, and obtained results are publicly available in these following places: 
+  - In this repository under the releases ******* 
+  - In a stable release in Zenodo at https://doi.org/10.5281/zenodo.5907901.
+  - The raw resulting data are in 
+
+
 * __Project Structure__
 
   In addition to the `main` branch, this project has 5 other relevant branches: 
@@ -98,7 +109,7 @@ Approximate time taken and used resoures in our used workstation were as in the 
 
 ### Running our experiments
 
-- **Step 1:** Somewhere in your directory, create a local copy of this project, e.g., by typing `git clone https://github.com/ternava/Incremental-build.git` in a terminal. 
+- **Step 1:** Open e terminal (you can use the terminal within an IDE, e.g., within Visual Studio Code). Somewhere in your directory, create a local copy of this project, e.g., by typing `git clone https://github.com/ternava/Incremental-build.git` in a terminal. 
 - **Step 2:** By being in the path of this project, enter in the cloned project by typing `cd Incremental-build`. 
 - **Step 3:** If you type `git branch`, it will show you that you are in the `main` branch. To run experiments with a specific software project, you need to switch to a specific branch (see the __Project Structure__). For instance, to run experiments with _x264_ software system you first need to switch to its branch. To do that, in the terminal you type `git checkout inc-build-x264`. In the following is shown how to run experiments with _x264_, then the same process can be applied for the rest.
 - **Step 4:** By being in the `inc-build-x264` branch, build an image from the _Dockerfile_ by typing `sudo docker build -t="imagex264" .` (don't forget the dot at the end, but you are free to change the `imagex264` image name).
