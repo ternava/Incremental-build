@@ -123,7 +123,7 @@ The following steps show how to run a first quick example, by only building the 
 - **Step 1:** Open e terminal (you can use the terminal within an IDE, e.g., within Visual Studio Code). 
 - **Step 2:** Somewhere in your directory, create a local copy of this project, e.g., by typing `git clone https://github.com/ternava/Incremental-build.git` in a terminal. 
 - **Step 3:** By being in the path of this project, enter in the cloned project by typing `cd Incremental-build`. 
-- **Step 4:** If you type `git branch -a`, it will show you that you are in the `main` branch. To run experiments with a specific software project, you need to switch to a specific branch (see the __Project Structure__). For instance, to run experiments with _x264_ software system you first need to switch to its branch. To do that, in the terminal you type `git checkout inc-build-x264`. In the following is shown how to run experiments with _x264_, then the same process can be applied for the rest.
+- **Step 4:** If you type `git branch -a`, it will show you that you are in the `main` branch. To run experiments with a specific software project, you need to switch to a specific branch (see the [Project Structure](https://github.com/ternava/Incremental-build#2-project-structure)). For instance, to run experiments with _x264_ software system you first need to switch to its branch. To do that, in the terminal you type `git checkout inc-build-x264`. In the following is shown how to run experiments with _x264_, then the same process can be applied for the rest.
 
   <details>
     <summary><u>See a</u> <b>screenshot</b> (<i>click to expand</i>)</summary>
@@ -198,7 +198,11 @@ The following steps show how to run a first quick example, by only building the 
 
   </details>
 
-- **Step 10:** These data are further processed in the folder `notebooks`.  This directory contains 3 other subfolders with 5 notebooks each, which are numbered 01-05 because they should be run in order. Actually files that being with 02 and 03 are the most important one. Open the `rez_sample_03_quicktest` folder and click the `02-CleanBuild.ipynb` file. It will open a new tab with the data from the clean build. In the menubar search for the `Kernel -> Restart and run all` and click it. It will refresh the notebook with your data from the run experiment. You need to do this for each notebook in order (the order is mandatory).
+- **Step 10:** These data are further processed in the folder `notebooks`.  This directory contains 3 other subfolders with 5 notebooks each, which are prefixed with 01-05 because they should run in order. Actually files that begin with 02 and 03 are the most important ones. 
+
+  Open the `rez_sample_03_quicktest` folder and click the `02-CleanBuild.ipynb` file. It will open a new tab with the data from the clean build. In the menubar search for the
+  `Kernel -> Restart and run all` and click it. It will refresh the notebook with your data from the run experiment. You need to do this for each notebook in order (the order is
+  important!).
 
   <details>
     <summary><u>See a</u> <b>screenshot</b> (<i>click to expand</i>)</summary>
@@ -225,7 +229,9 @@ The following steps show how to run a first quick example, by only building the 
   </details>
     
 
-- **Step 11:** You can compare your obtained data with those that we have provided in Table 2 in the original conference paper. These data are further processed, analysed, and showed in Figures 6 - 8 and Tables 3 - 4. For example, compare the Build Time and Binary Size of `x264-00003` with the values in the Table in column `c3` and rows 1 and 4, respectively. The build time is approximately the same whereas the binary size is identical. 
+- **Step 11:** Now, you can compare the obtained data with those that we have provided in Table 2 in the original conference paper. These data are further processed, analysed, and showed in Figures 6 - 8 and Tables 3 - 4 in the paper. For example, compare the Build Time and Binary Size of `x264-00003` with the values in the Table 2 in column `c3` and rows 1 and 4, respectively. The build time is similar and the binary size is identical. 
+  
+  The `03-IncrementalBuild.ipynb` notebook contains the processed results for the incremental build configurations. And, the `04-CompareCBvsIB.ipynb` notebook contain a comparison of clean and incremental build configurations. 
 
   <details>
     <summary><u>See a</u> <b>screenshot</b> (<i>click to expand</i>)</summary>
@@ -249,23 +255,27 @@ The following steps show how to run a first quick example, by only building the 
 
 - **Step 12:** To stop the container, type `Ctrl+C` twice in the terminal or quit the notebooks.
 
-This was just an illustrative example. But, the exact same steps should be followed to build all configurations in batch 1 or barch 2 of a given system. 
+#### 4.3. A COMPLETE reproduction
 
-- **Step 13:** In that case, check if you are in the path of cloned project, that is, within the `Incremental-build` folder (as shown in **Step 2**).
-- **Step 14:** As mentioned in **Step 3**, you can switch to a specific branch, depending with which project you want to experiment.
-- **Step 15:** In whichever 5 project branches that you are, you can decide to experiment with the Batch 1 or Batch 2 of its configurations. To switch between batches, open the file `/scripts/options.py` with an editor or type `nano -l scripts/options.py` in the terminal. Then, as explained in the comment in lines 14-16, you can switch between batches by changing the line 18. 
-- **Step 16:**  Repeat **Step 4 - Step 12**. 
+The previous example was real, but with only first 3 configurations in the system _x264_.  
+
+The exact same steps should be followed to build all 20 configurations in batch 1 or barch 2 of each 5 systems. This should be done one by one. For instance, to reproduce a complete experiment with _sqlite_ follow these steps: 
+
+- **Step A:** Check if you are in the path of cloned project, that is, within the `Incremental-build` folder (as shown in **Step 3**).
+- **Step B:** As mentioned in **Step 4**, you can switch to the sqlite specific branch `git checkout inc-build-sqlite`.
+- **Step C:** In whatever 5 project branches you are, you need to decide to experiment with the Batch 1 or Batch 2 of its configurations. To switch between batches, open the file `/scripts/options.py` with an editor or type `nano -l scripts/options.py` in the terminal. Then, as explained in the comment in lines 14-16, you can make the necessary modification in line 18. Save it and exit with `Ctrl+D`.
+- **Step D:**  Repeat **Step 5 - Step 12**. 
+
+- Repeat **Step A - Step C** for each Batch with configurations within a given subject system and for each system.
 
 
+**ASIDE NOTE:** As explained in [Required resources](https://github.com/ternava/Incremental-build#14-required-resources), the required disk space is quite considerable. But, after getting the results and saving them in the host for one subject system (or even for one batch of configurations), you can delete containers and images by typing:
 
-
-Aside notes: 
-- Restart the existing container: `docker start -i containercurl`
 - Delete all containers: `docker rm -f $(docker ps -a -q)`
 - Delete all images: `docker rmi -f $(docker images -a -q)`
 
 
-### How to obtain the artifact package
+
 
 ### How to reproduce the results presented in the paper
 
