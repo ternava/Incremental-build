@@ -25,7 +25,15 @@
 #### 1.1. How is delivered
 
   Our used data, scripts, and obtained results are publicly available in these following places: 
-  - In this repository under the releases ******* 
+  
+  - In this repository under the releases 
+   - [ICSE22-artifact-main-v01](https://github.com/ternava/Incremental-build/releases/tag/ICSE22-artifact-main-v01), 
+   - [ICSE22-artifact-x264-v01](https://github.com/ternava/Incremental-build/releases/tag/ICSE22-artifact-x264-v01)
+   - [ICSE22-artifact-sqlite-v01](https://github.com/ternava/Incremental-build/releases/tag/ICSE22-artifact-sqlite-v01)
+   - [ICSE22-artifact-xz-v01](https://github.com/ternava/Incremental-build/releases/tag/ICSE22-artifact-xz-v01)
+   - [ICSE22-artifact-curl-v01](https://github.com/ternava/Incremental-build/releases/tag/ICSE22-artifact-curl-v01)
+   - [ICSE22-artifact-xterm-v01](https://github.com/ternava/Incremental-build/releases/tag/ICSE22-artifact-xterm-v01)
+   
   - In a stable release in Zenodo at https://doi.org/10.5281/zenodo.5907901.
 
 #### 1.2. Hardware dependencies
