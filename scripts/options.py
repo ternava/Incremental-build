@@ -11,7 +11,7 @@ def path_leaf(path):
 
 def spec_to_array():
     
-    """     Here you can chose which Batch with configurations you want to use.
+    """     Here you can choose which Batch with configurations you want to use.
        Batch 1: set the path in line 18 to "/src/configurations/sample-03/*.config"
        Batch 2: set the path in line 18 to "/src/configurations/sample-04/*.config" """    
     
