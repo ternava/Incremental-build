@@ -34,7 +34,7 @@
    - [ICSE22-artifact-curl-v01](https://github.com/ternava/Incremental-build/releases/tag/ICSE22-artifact-curl-v01)
    - [ICSE22-artifact-xterm-v01](https://github.com/ternava/Incremental-build/releases/tag/ICSE22-artifact-xterm-v01)
    
-  - In a stable release in Zenodo at https://doi.org/10.5281/zenodo.5907901.
+  - In a stable release in Zenodo at https://doi.org/10.5281/zenodo.5915117. 
 
 #### 1.2. Hardware dependencies
 
