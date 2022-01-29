@@ -84,7 +84,7 @@ Approximate time taken and used resoures in our used workstation were as in the 
     documentation and how to run the procedure to produce a csv file with the
     result.
   
-  - In the main branch, the folder `ordering` contains a jupyter notebook `ordering/ExGraph.ipynb` in which you can visualise
+  - In the `main` branch, the folder `ordering` contains a jupyter notebook `ordering/ExGraph.ipynb` in which you can visualise
     the directed graph that shows the possible build ordering of configurations
     for each system. The graphs are obtained from the csv files in
     `ordering/order`. These csv files were obtained by extracting manually the
