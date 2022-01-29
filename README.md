@@ -134,7 +134,7 @@ In each system we have used two batched of configurations. They are available wi
 
 These configurations remain unchanged in order to reproduce our study. 
 
-To switch to a specific batch, please open the file `/scripts/options.py` and follow the instructions given in comments 14-16. For example, [here is](https://github.com/ternava/Incremental-build/blob/20cbaa9f1b8c1f02142aa4fbd598874460b127ad/scripts/options.py) the file for the experiments with `curl`.
+To switch to a specific batch, please open the file `/scripts/options.py` and follow the instructions given in comments 14-16. For example, [here is](https://github.com/ternava/Incremental-build/blob/98da2825b1b1a759b9377f794bfed5dda8fcb06a/scripts/options.py) the file for the experiments with `curl`.
 
 
 #### 4.2. Prerequisites
