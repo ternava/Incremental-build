@@ -120,10 +120,21 @@ Approximate time taken and used resoures in our used workstation were as in the 
 
 #### 4.1. Batches of configurations
 
-In each system we have used two batched of configurations. They are available within the folder `configurations` under the names `sample-03`(batch 1) and `sample-04` (batch 2).
+In each system we have used two batched of configurations. They are available within the folder `configurations` under the names 
+- `sample-03` for Batch 1
+- `sample-04` for Batch 2
+
+  <details>
+    <summary><u>See a</u> <b>screenshot</b> (<i>click to expand</i>)</summary>
+    <!-- have to be followed by an empty line! -->
+    
+    ![Step 0](screenshots/scrnshot00.png?raw=true)
+
+  </details>
+
 These configurations remain unchanged in order to reproduce our study. 
 
-To switch to a specific batch, please open the file `/scripts/options.py`
+To switch to a specific batch, please open the file `/scripts/options.py` and follow the instructions given in comments 14-16. For example, [here is](scripts/options.py) the file for the experiments with `curl`.
 
 
 #### 4.2. Prerequisites
